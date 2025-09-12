@@ -1,0 +1,34 @@
+2025-09-12T15:11:42.642Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"80N0RR5E98PVBCR6JPFVULQ7I7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T15:11:42.643Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T15:11:42.725Z [info]: User: [object Object] is logged in successfully
+2025-09-12T15:11:42.726Z [info]:  User is successfully logged in create a ticket
+2025-09-12T15:11:56.190Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"4J3DTHBSGSUPBHA8506TJRI2S3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T15:11:56.191Z [info]: Username: newuser2 not found
+2025-09-12T15:11:56.192Z [info]: User: undefined had invalid credentials
+2025-09-12T15:11:56.192Z [info]: Please Log in to create a ticket
+2025-09-12T15:14:01.748Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"II7A7DH4A2Q2HIR7IUSUG7T8ERVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T15:14:01.751Z [info]: User does not exist
+2025-09-12T15:14:57.867Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"P8TIJPFS6SN1U61L49J0JE6C4NVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T15:14:57.869Z [info]: Username: [object Object] not found
+2025-09-12T15:14:57.869Z [info]: User does not exist
+2025-09-12T15:17:00.498Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"GFELS9F2GVAHFLDNRVTPDV9NSNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T15:17:00.502Z [info]: User does not exist
+2025-09-12T15:17:45.793Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"U66JMMBDL82QN2EG69HOLQRM4FVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T15:17:55.460Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"61EGUVFEUE8AD7SVLJHDJGI0BBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T15:17:55.463Z [info]: User does not exist
+2025-09-12T15:19:24.293Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"G9EGSJNEDVLDOPRVS5LL3KRDUJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T15:19:24.295Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T15:19:24.295Z [info]: User is successfully logged and exists
+2025-09-12T15:19:48.811Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"5EFKTKVMP9VCRC395KJMR2UJ1BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T15:19:48.814Z [info]: Username: ner2 not found
+2025-09-12T15:19:48.814Z [info]: User does not exist
+2025-09-12T15:24:22.805Z [info]: No amount found. Please provide an amount
+2025-09-12T15:24:30.170Z [info]: No amount found. Please provide an amount
+2025-09-12T15:24:36.785Z [info]: No amount found. Please provide an amount
+2025-09-12T15:24:54.352Z [info]: No amount found. Please provide an amount
+2025-09-12T15:24:59.737Z [info]: No amount found. Please provide an amount
+2025-09-12T15:25:11.007Z [info]: Amount detected successfully
+2025-09-12T15:28:06.566Z [info]: No description found. Please provide a description
+2025-09-12T15:28:17.014Z [info]: No description found. Please provide a description
+2025-09-12T15:28:30.947Z [info]: No description found. Please provide a description
+2025-09-12T15:30:01.590Z [info]: Description detected successfully

@@ -19,14 +19,14 @@ async function registerNewUser(user){
     })
 
     try{
-        console.log("TRY FLAG");
+        //console.log("TRY FLAG");
         const registrationData = await documentClient.send(command);
         console.log("regisData: " + registrationData);
         logger.info(`Successful put command to db ${JSON.stringify(registrationData)}`);
         return registrationData;
 
     }catch (error){
-        console.log("CATCH FLAG");
+        //console.log("CATCH FLAG");
         logger.error(error);
     }
 }

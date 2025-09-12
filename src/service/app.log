@@ -196,3 +196,102 @@
 2025-09-11T19:57:02.043Z [info]: username: {"user_id":"19f1469c-0fa5-4569-bcd1-b3d4b918080a","password":"$2b$10$j79SZ/6wnhJwfEXhdGweWugD7EfEeZQbwwnl4hexwhgHtq.Bkrnlm","username":"test1"} is already taken
 2025-09-11T19:57:02.045Z [info]: please register with a different username
 2025-09-11T19:57:02.047Z [info]: Failed to register new user
+2025-09-12T14:58:40.122Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"VA80O4ORE6AMK1BBQ8HVD8LINFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T14:58:40.128Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"F1LD9M9AH58DQAJHPOV8P0187JVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T15:44:39.618Z [info]: Amount detected successfully
+2025-09-12T15:44:39.634Z [info]: Description detected successfully
+2025-09-12T15:44:39.637Z [info]: User: undefined had invalid credentials
+2025-09-12T15:44:39.637Z [info]: Please Log in to create a ticket
+2025-09-12T15:44:40.102Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"7VRN7VDDP5RHNO4KJ7PCCF2R7BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T15:44:40.108Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"0B60BEM514AQTA5L459B37DCP3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T15:44:40.109Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T15:44:40.110Z [info]: User is successfully logged and exists
+2025-09-12T15:47:25.156Z [info]: Amount detected successfully
+2025-09-12T15:47:25.159Z [info]: Description detected successfully
+2025-09-12T15:47:25.163Z [info]: User: undefined had invalid credentials
+2025-09-12T15:47:25.163Z [info]: Please Log in to create a ticket
+2025-09-12T15:47:25.523Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"D69JT3C6RE1ORL39GAFMM6OG57VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T15:47:25.529Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"UIEIT3DG6GE8IEV64HTTR1JLHFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T15:47:25.530Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T15:47:25.531Z [info]: User is successfully logged and exists
+2025-09-12T17:20:36.113Z [info]: Amount detected successfully
+2025-09-12T17:20:36.117Z [info]: Description detected successfully
+2025-09-12T17:20:36.123Z [info]: User: undefined had invalid credentials
+2025-09-12T17:20:36.124Z [info]: Please Log in to create a ticket
+2025-09-12T17:20:36.545Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"GJ9MR8FD3CRRFQAT6H8R58O2PVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T17:20:36.552Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"FQOK8EL4S9GGTDAU6RK6G9QT0BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:20:36.555Z [info]: Username: newuser2 not found
+2025-09-12T17:20:36.556Z [info]: User does not exist
+2025-09-12T17:24:03.471Z [info]: No amount found. Please provide an amount
+2025-09-12T17:24:03.475Z [info]: No description found. Please provide a description
+2025-09-12T17:24:03.480Z [info]: User: undefined had invalid credentials
+2025-09-12T17:24:03.481Z [info]: Please Log in to create a ticket
+2025-09-12T17:24:03.878Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"B94HA2KS8DT5A0JLO8IDO712IVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:24:03.879Z [info]: Username: newuser2 not found
+2025-09-12T17:24:03.880Z [info]: User does not exist
+2025-09-12T17:24:03.884Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"MSTFLP06GEG46BGLN0NFQ1FOHBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T17:30:04.340Z [info]: User: undefined had invalid credentials
+2025-09-12T17:30:04.347Z [info]: Please Log in to create a ticket
+2025-09-12T17:30:37.119Z [info]: User: undefined had invalid credentials
+2025-09-12T17:30:37.126Z [info]: Please Log in to create a ticket
+2025-09-12T17:31:34.670Z [info]: User: undefined had invalid credentials
+2025-09-12T17:31:34.672Z [info]: Please Log in to create a ticket
+2025-09-12T17:32:12.038Z [info]: User: undefined had invalid credentials
+2025-09-12T17:32:12.044Z [info]: Please Log in to create a ticket
+2025-09-12T17:32:45.025Z [info]: User: undefined had invalid credentials
+2025-09-12T17:32:45.030Z [info]: Please Log in to create a ticket
+2025-09-12T17:34:18.577Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"E86BISP9CA4BJU7GF8TAG89HVRVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:34:18.581Z [info]: Username: newuser2 not found
+2025-09-12T17:34:18.583Z [info]: User does not exist
+2025-09-12T17:35:13.868Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"P83K2L05OJIQKMMIRDUAQSIPH3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:35:13.871Z [info]: Username: newuser2 not found
+2025-09-12T17:35:13.874Z [info]: User does not exist
+2025-09-12T17:35:34.955Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"AE1P67PCOH9P3BO0FR60NJPT9VVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:35:34.962Z [info]: Username: newuser2 not found
+2025-09-12T17:35:34.964Z [info]: User does not exist
+2025-09-12T17:36:06.569Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"6NTFP81136A44HEE0LVN7KKDQRVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:36:06.577Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:36:06.582Z [info]: User is successfully logged and exists
+2025-09-12T17:37:05.785Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"6GS43SM57N7S1BAPEU3NTEB8LJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:37:05.791Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:37:05.793Z [info]: User is successfully logged and exists
+2025-09-12T17:37:13.609Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"3HC85PEBR21V4BF8L59CJGH2TJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:37:13.612Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:37:13.614Z [info]: User is successfully logged and exists
+2025-09-12T17:37:17.534Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"21D5U26H5PQVTQ85IGFM0V15EJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:37:17.543Z [info]: Username: newuser2 not found
+2025-09-12T17:37:17.545Z [info]: User does not exist
+2025-09-12T17:37:44.753Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"LOQM7TLRIIT1JAT1ITVSCJ3AUNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:37:44.756Z [info]: Username: newuser2 not found
+2025-09-12T17:37:44.759Z [info]: User does not exist
+2025-09-12T17:40:23.097Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"81JHCJPHFQ4VUL1RJ3PIVGJ1LNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:40:59.544Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"1JB9OSQQV55U18P755KTHIDEF7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:40:59.548Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:40:59.549Z [info]: User is successfully logged and exists
+2025-09-12T17:40:59.550Z [info]: No amount found. Please provide an amount
+2025-09-12T17:40:59.551Z [info]: No amount found. Please provide an amount
+2025-09-12T17:41:20.969Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"IG3GK0ES3K6H99PKV9S02QJA87VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:41:20.974Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:41:20.977Z [info]: User is successfully logged and exists
+2025-09-12T17:41:20.979Z [info]: No amount found. Please provide an amount
+2025-09-12T17:41:36.168Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"8QKDEBKP83CT3E155MSMJSV6KRVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:41:36.170Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:41:36.173Z [info]: User is successfully logged and exists
+2025-09-12T17:41:36.173Z [info]: Amount detected successfully
+2025-09-12T17:42:36.094Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"9S3OF5R0FCB6I1UVTB7O59MVEBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:42:36.101Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:42:36.103Z [info]: User is successfully logged and exists
+2025-09-12T17:42:36.106Z [info]: Amount detected successfully
+2025-09-12T17:42:36.108Z [info]: Description detected successfully
+2025-09-12T17:42:47.117Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"OVAT8ULHCENECH99TI0TSE4TSJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:42:47.128Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:42:47.133Z [info]: User is successfully logged and exists
+2025-09-12T17:42:47.143Z [info]: Amount detected successfully
+2025-09-12T17:42:47.147Z [info]: No description found. Please provide a description
+2025-09-12T17:44:26.547Z [info]: User: undefined had invalid credentials
+2025-09-12T17:44:26.550Z [info]: Please Log in to create a ticket
+2025-09-12T17:44:26.955Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"6UK54LTPHN96295SJABH8HVC9BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:44:26.960Z [info]: Username: newuser2 not found
+2025-09-12T17:44:26.962Z [info]: User does not exist
+2025-09-12T17:44:26.964Z [info]: Amount detected successfully
+2025-09-12T17:44:26.964Z [info]: Description detected successfully

@@ -326,3 +326,64 @@
 2025-09-11T20:17:55.598Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"H8FQ3FBKL1E5H3BRP1KNDRCJKVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
 2025-09-11T20:17:55.599Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
 2025-09-11T20:17:55.680Z [info]: User: [object Object] had invalid credentials
+2025-09-12T16:02:10.258Z [info]: Amount detected successfully
+2025-09-12T16:02:10.261Z [info]: Description detected successfully
+2025-09-12T16:02:10.262Z [info]: User: undefined had invalid credentials
+2025-09-12T16:02:10.263Z [info]: Please Log in to create a ticket
+2025-09-12T16:02:10.646Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"NO2J2VJDDQM827350NNEDEQ5K3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T16:02:10.652Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"2O8EP35U046G567EP59C4AH6DJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T16:02:10.652Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T16:02:10.653Z [info]: User is successfully logged and exists
+2025-09-12T16:03:02.489Z [info]: Amount detected successfully
+2025-09-12T16:03:02.492Z [info]: Description detected successfully
+2025-09-12T16:03:02.494Z [info]: User: undefined had invalid credentials
+2025-09-12T16:03:02.494Z [info]: Please Log in to create a ticket
+2025-09-12T16:03:02.890Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"SFFO0O3E38IFPD5E6ACEDROJMRVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T16:03:02.897Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"9C2G4FVL62MD072RUC6SV3VCQ7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T16:03:02.898Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T16:03:02.899Z [info]: User is successfully logged and exists
+2025-09-12T17:09:31.324Z [info]: Amount detected successfully
+2025-09-12T17:09:31.327Z [info]: Description detected successfully
+2025-09-12T17:09:31.335Z [info]: User: undefined had invalid credentials
+2025-09-12T17:09:31.336Z [info]: Please Log in to create a ticket
+2025-09-12T17:09:31.786Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"29UK4O76JK293S1G046PIO4L23VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T17:09:31.793Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"079ODGOA6FHPM8N0PI9A1VEVGBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:09:31.793Z [info]: Username: newuser2 not found
+2025-09-12T17:09:31.794Z [info]: User does not exist
+2025-09-12T17:12:30.637Z [info]: Amount detected successfully
+2025-09-12T17:12:30.639Z [info]: Description detected successfully
+2025-09-12T17:12:30.641Z [info]: User: undefined had invalid credentials
+2025-09-12T17:12:30.641Z [info]: Please Log in to create a ticket
+2025-09-12T17:12:31.057Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"7O52K2MFAFTHR7KC8UC4VUSKERVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T17:12:31.070Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"PO26KAE7R316Q86V1QPBN7PGABVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:12:31.072Z [info]: Username: newuser2 not found
+2025-09-12T17:12:31.072Z [info]: User does not exist
+2025-09-12T17:16:59.486Z [info]: Amount detected successfully
+2025-09-12T17:16:59.490Z [info]: Description detected successfully
+2025-09-12T17:16:59.494Z [info]: User: undefined had invalid credentials
+2025-09-12T17:16:59.495Z [info]: Please Log in to create a ticket
+2025-09-12T17:16:59.978Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"N8V615D6L14FLILR67GCQ92TCVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:16:59.980Z [info]: Username: newuser2 not found
+2025-09-12T17:16:59.980Z [info]: User does not exist
+2025-09-12T17:16:59.983Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"1Q2MVUARO7TOSRTVCNEPQ6R15BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-12T17:46:07.415Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"LI43747U0AOK55BVU5FIPKSQKJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:46:07.417Z [info]: Username: newuser2 not found
+2025-09-12T17:46:07.418Z [info]: User does not exist
+2025-09-12T17:46:07.421Z [info]: Amount detected successfully
+2025-09-12T17:46:07.421Z [info]: Description detected successfully
+2025-09-12T17:46:27.301Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"UJP6ELN1MEQS6NJLR0REK2F9DRVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:46:27.307Z [info]: Username: newuser2 not found
+2025-09-12T17:46:27.308Z [info]: User does not exist
+2025-09-12T17:46:27.310Z [info]: Amount detected successfully
+2025-09-12T17:46:27.312Z [info]: Description detected successfully
+2025-09-12T17:46:55.079Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"7AGVNODGGOI8329BH6AP59FT2RVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-12T17:46:55.083Z [info]: Username: newuser2 not found
+2025-09-12T17:46:55.084Z [info]: User does not exist
+2025-09-12T17:46:55.085Z [info]: Amount detected successfully
+2025-09-12T17:46:55.086Z [info]: Description detected successfully
+2025-09-12T17:48:07.434Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"1RMVSB6SFPJGSIMQQVKS6JSC8RVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"}],"ScannedCount":1}
+2025-09-12T17:48:07.440Z [info]: Username: {"user_id":"74b691f3-c8dc-437a-aa20-59c32435d406","password":"$2b$10$KEOYOQmAnk7BDUeklopcXOPSBz4OnFs4XxrgpsHtv8gPxFrmEzQ56","username":"newuser"} found
+2025-09-12T17:48:07.442Z [info]: User is successfully logged and exists
+2025-09-12T17:48:07.444Z [info]: Amount detected successfully
+2025-09-12T17:48:07.446Z [info]: Description detected successfully
+2025-09-12T17:48:07.721Z [info]: New ticket created {"$metadata":{"httpStatusCode":200,"requestId":"3H0MB42S3LEAI9HDRUGF49RNGBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
