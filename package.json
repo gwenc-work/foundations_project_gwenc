@@ -1,0 +1,33 @@
+{
+  "name": "foundations_project_gwenc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwenc-work/foundations_project_gwenc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gwenc-work/foundations_project_gwenc/issues"
+  },
+  "homepage": "https://github.com/gwenc-work/foundations_project_gwenc#readme",
+  "devDependencies": {
+    "jest": "^30.1.3"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.883.0",
+    "@aws-sdk/lib-dynamodb": "^3.883.0",
+    "bcrypt": "^6.0.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^13.0.0",
+    "winston": "^3.17.0"
+  }
+}

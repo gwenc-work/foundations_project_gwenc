@@ -1,0 +1,198 @@
+2025-09-11T14:37:48.462Z [info]:  success! username and password are both included in registration
+2025-09-11T14:37:48.904Z [error]: Invalid FilterExpression: An expression attribute value used in expression is not defined; attribute value: :username
+2025-09-11T14:37:48.905Z [info]: username: undefined is available
+2025-09-11T14:37:48.907Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"S158GLK0R8RP361T5M2NIABIJNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T14:37:48.908Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"S158GLK0R8RP361T5M2NIABIJNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T16:56:04.731Z [info]:  success! username and password are both included in registration
+2025-09-11T16:56:05.299Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"BBOPDOB9AI4KUI22NAV3FUB0ANVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"}],"ScannedCount":1}
+2025-09-11T16:56:05.300Z [info]: username: {"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"} is already taken
+2025-09-11T16:56:05.301Z [info]: please register with a different username
+2025-09-11T16:56:05.303Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"3BLTGP8QC2HO7NOSDVKVB1DN8RVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"}],"ScannedCount":1}
+2025-09-11T16:56:50.674Z [info]:  success! username and password are both included in registration
+2025-09-11T16:56:51.189Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"C697ER3KEQHB0FJQ7FBD3HF6BFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"}],"ScannedCount":1}
+2025-09-11T16:56:51.194Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"SK93GJDFDOJUPBIND1IGEP8OAVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"}],"ScannedCount":1}
+2025-09-11T16:56:51.195Z [info]: username: {"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"} is already taken
+2025-09-11T16:56:51.197Z [info]: please register with a different username
+2025-09-11T16:56:51.202Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"ADTL5VHEASA5I85FTVM74Q46BNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T16:56:51.204Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"ADTL5VHEASA5I85FTVM74Q46BNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T16:57:37.296Z [info]:  success! username and password are both included in registration
+2025-09-11T16:57:37.690Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"OPIP2C6IOQTAJ8G7305SJU0EO7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":2,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"},{"user_id":"9fa81551-58bf-4707-95ae-20eecf67c6e7","password":"testService1Pass","username":"test1"}],"ScannedCount":2}
+2025-09-11T16:57:37.695Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"P4GEUVSQVCV3HJMMT1EBJ9PJHFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":2,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"},{"user_id":"9fa81551-58bf-4707-95ae-20eecf67c6e7","password":"testService1Pass","username":"test1"}],"ScannedCount":2}
+2025-09-11T16:57:37.697Z [info]: username: {"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"} is already taken
+2025-09-11T16:57:37.698Z [info]: please register with a different username
+2025-09-11T16:57:37.706Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"RCIB8C34M9D6O1CNGRND03HI6FVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T16:57:37.711Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"RCIB8C34M9D6O1CNGRND03HI6FVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T16:58:57.622Z [info]:  success! username and password are both included in registration
+2025-09-11T16:58:58.040Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"AVF5TM4C2PSG3QM4BUNM5J707FVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":3,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"},{"user_id":"9fa81551-58bf-4707-95ae-20eecf67c6e7","password":"testService1Pass","username":"test1"},{"user_id":"aaac7697-51ef-4c3c-8ffb-cd4c5a3d01c7","password":"testService1Pass","username":"test1"}],"ScannedCount":3}
+2025-09-11T16:58:58.044Z [info]: username: {"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"} is already taken
+2025-09-11T16:58:58.046Z [info]: please register with a different username
+2025-09-11T16:58:58.053Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"IE8C7BBKU4HQIMR7DAMD97UPGJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T16:58:58.055Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"IE8C7BBKU4HQIMR7DAMD97UPGJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T16:58:58.057Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"9L1R4NTB7E5ADEJOF9G2CF4J2NVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":4,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"},{"user_id":"9fa81551-58bf-4707-95ae-20eecf67c6e7","password":"testService1Pass","username":"test1"},{"user_id":"aaac7697-51ef-4c3c-8ffb-cd4c5a3d01c7","password":"testService1Pass","username":"test1"},{"user_id":"2b9f3f57-e26a-4453-8f34-77f9b62b81c6","password":"testService1Pass","username":"test1"}],"ScannedCount":4}
+2025-09-11T16:58:58.065Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"KLNM0T9MTH7EJJN9MUV4HNNLINVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":4,"Items":[{"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"},{"user_id":"9fa81551-58bf-4707-95ae-20eecf67c6e7","password":"testService1Pass","username":"test1"},{"user_id":"aaac7697-51ef-4c3c-8ffb-cd4c5a3d01c7","password":"testService1Pass","username":"test1"},{"user_id":"2b9f3f57-e26a-4453-8f34-77f9b62b81c6","password":"testService1Pass","username":"test1"}],"ScannedCount":4}
+2025-09-11T16:58:58.065Z [info]: username: {"user_id":"08818e1e-600d-42eb-9e89-a69ff8c4d029","password":"testpass","username":"test1"} is already taken
+2025-09-11T16:58:58.066Z [info]: please register with a different username
+2025-09-11T18:43:16.076Z [info]:  success! username and password are both included in registration
+2025-09-11T18:43:16.546Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"MLCVHF5QV7NM06NTBNUMFU56RNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T18:43:16.547Z [info]: username: "testService1" is available
+2025-09-11T18:43:58.255Z [info]:  success! username and password are both included in registration
+2025-09-11T18:43:58.674Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"VIUBL1A8JM29K8H92U3OG00BQNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T18:43:58.676Z [info]: username: "testService1" is available
+2025-09-11T18:45:22.516Z [info]:  success! username and password are both included in registration
+2025-09-11T18:45:22.903Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"15QELQK73E6TUJTP7QBGQS0UNBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T18:45:22.904Z [info]: username: "testService1" is available
+2025-09-11T18:52:17.391Z [info]:  success! username and password are both included in registration
+2025-09-11T18:52:17.998Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"MQROFH75CDP6HJVQHFMBSJ5PKVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T18:52:17.999Z [info]: username: "testService1" is available
+2025-09-11T18:56:27.842Z [info]:  success! username and password are both included in registration
+2025-09-11T18:56:28.281Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"PPK6LVG2I00URQHIKL2D92RICVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T18:56:28.373Z [error]: One or more parameter values were invalid: Missing the key user_id in the item
+2025-09-11T18:56:28.374Z [info]: username: "testService1" is available
+2025-09-11T18:58:10.955Z [info]:  success! username and password are both included in registration
+2025-09-11T18:58:11.405Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"OU4T2UA8LP9EKA824IR76QN2IBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T18:58:11.492Z [error]: One or more parameter values were invalid: Missing the key user_id in the item
+2025-09-11T18:58:11.493Z [info]: username: "testService1" is available
+2025-09-11T18:58:18.483Z [info]:  success! username and password are both included in registration
+2025-09-11T18:58:18.883Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"4US3MIO4T972DHU4OCOUQSBTRBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T18:58:18.974Z [error]: One or more parameter values were invalid: Missing the key user_id in the item
+2025-09-11T18:58:18.975Z [info]: username: "testService1" is available
+2025-09-11T18:58:30.847Z [info]:  success! username and password are both included in registration
+2025-09-11T18:58:31.498Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"H7CP205TF8ILI2K4NC6OSIJUEFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T18:58:31.499Z [info]: username: "testService1" is available
+2025-09-11T19:00:16.802Z [info]:  success! username and password are both included in registration
+2025-09-11T19:00:17.221Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"5ICM13IHFTGHPGL4N00P0EGTL7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:06:27.586Z [info]:  success! username and password are both included in registration
+2025-09-11T19:06:27.593Z [info]: Failed to register new user
+2025-09-11T19:06:28.007Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"5T5GUNQ50PM1CCVA6F2I1HF3CFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:06:28.007Z [info]: username: "testService1" is available
+2025-09-11T19:08:27.667Z [info]:  success! username and password are both included in registration
+2025-09-11T19:08:27.674Z [info]: Failed to register new user
+2025-09-11T19:08:28.104Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"SA959IHILQA5E8P68CFM158SOVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:08:54.346Z [info]:  success! username and password are both included in registration
+2025-09-11T19:08:54.354Z [info]: Failed to register new user
+2025-09-11T19:08:54.798Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"0R4OHDFAAH1USVDANLU3AJO80FVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:08:54.799Z [info]: username: "testService1" is available
+2025-09-11T19:09:16.752Z [info]:  success! username and password are both included in registration
+2025-09-11T19:09:16.763Z [info]: Failed to register new user
+2025-09-11T19:09:17.142Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"D5V0H9AU3T2SAHBAVFCQ9P0PLBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:09:17.143Z [info]: username: "testService1" is available
+2025-09-11T19:11:22.851Z [info]:  success! username and password are both included in registration
+2025-09-11T19:11:23.254Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"3EJL5R010SMMFMCR9F4VH987T3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:11:23.255Z [info]: username: "testService1" is available
+2025-09-11T19:11:45.094Z [info]:  success! username and password are both included in registration
+2025-09-11T19:11:45.491Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"2MP2GDVQ1B6A9PILUV43NA32AVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:11:45.493Z [info]: username: "testService1" is available
+2025-09-11T19:12:02.245Z [info]:  success! username and password are both included in registration
+2025-09-11T19:12:02.621Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"CPS3B5FOJ9GHTQVF1QRTH6KK03VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:12:02.621Z [info]: username: "testService1" is available
+2025-09-11T19:16:06.548Z [info]:  success! username and password are both included in registration
+2025-09-11T19:16:06.947Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"TDR6TA9JD0TFAIF56UHMTR90I3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"133ca64a-ab9e-489d-b328-869712fc42ff","password":"testDAO1","username":"testDAO1"}],"ScannedCount":1}
+2025-09-11T19:16:06.948Z [info]: username: {"user_id":"133ca64a-ab9e-489d-b328-869712fc42ff","password":"testDAO1","username":"testDAO1"} is already taken
+2025-09-11T19:16:06.949Z [info]: please register with a different username
+2025-09-11T19:18:37.913Z [info]:  success! username and password are both included in registration
+2025-09-11T19:18:38.345Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"7LGN7OEILT0T9S6GHUSMKBHJ1RVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"133ca64a-ab9e-489d-b328-869712fc42ff","password":"testDAO1","username":"testDAO1"}],"ScannedCount":1}
+2025-09-11T19:18:38.347Z [info]: username: {"user_id":"133ca64a-ab9e-489d-b328-869712fc42ff","password":"testDAO1","username":"testDAO1"} is already taken
+2025-09-11T19:18:38.348Z [info]: please register with a different username
+2025-09-11T19:18:55.917Z [info]:  success! username and password are both included in registration
+2025-09-11T19:18:56.347Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"6PCDEL1MLPRC211GQE1MA4K4TBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:18:56.349Z [info]: username: "testService1" is available
+2025-09-11T19:19:21.233Z [info]:  success! username and password are both included in registration
+2025-09-11T19:19:21.648Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"I3Q1DJTRSM2AO5JP8R6JBJPIHFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:19:21.649Z [info]: username: "testService1" is available
+2025-09-11T19:19:27.602Z [info]:  success! username and password are both included in registration
+2025-09-11T19:19:27.996Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"R4BTDVLLTULPOPV82JLH57BC8RVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:19:27.998Z [info]: username: "testService1" is available
+2025-09-11T19:19:54.091Z [info]:  success! username and password are both included in registration
+2025-09-11T19:19:54.519Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"2P0T835G2I3FUSKJTRAUAGASH7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:19:54.521Z [info]: username: "testService1" is available
+2025-09-11T19:19:54.527Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"RPCMSFT4FU6O1ULO0GN55MHUOFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:19:54.529Z [info]: username: "testService1" is available
+2025-09-11T19:20:35.569Z [info]:  success! username and password are both included in registration
+2025-09-11T19:20:36.030Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"N57T7IGEN8C9LFHDV1P92A0A8BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:20:36.032Z [info]: username: "testService1" is available
+2025-09-11T19:20:36.035Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"TQCSQ87MIMJ6RRF4V3QB3IDVAVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:20:36.036Z [info]: username: "testService1" is available
+2025-09-11T19:24:07.466Z [info]:  success! username and password are both included in registration
+2025-09-11T19:24:07.870Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"4FK0JSDP1L8NQNTKT0HEEJ4KHNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:24:07.871Z [info]: username: "testService1" is available
+2025-09-11T19:24:07.874Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"AAKSJKPCMFB7H9RLTLRCIFN33JVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:24:07.875Z [info]: username: "testService1" is available
+2025-09-11T19:29:48.706Z [info]:  success! username and password are both included in registration
+2025-09-11T19:29:49.117Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"MF7HEA4ISER9985H31PBG6V26BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:29:49.118Z [info]: username: "testService1" is available
+2025-09-11T19:29:49.119Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"22VDCU0V66PDGDPNBSEV8PG1AFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:29:49.119Z [info]: username: "testService1" is available
+2025-09-11T19:33:37.949Z [info]:  success! username and password are both included in registration
+2025-09-11T19:33:38.396Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"31NKFAGP6JH6SAJV0HH370C32JVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:33:38.397Z [info]: username: "testService1" is available
+2025-09-11T19:33:38.402Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"TPH7HTF4RP4D88OATVC8BFUPNNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:33:38.404Z [info]: username: "testService1" is available
+2025-09-11T19:35:14.509Z [info]:  success! username and password are both included in registration
+2025-09-11T19:35:14.969Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"OPLCIEG1PGM2L2OHC9OAJEM687VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:35:14.971Z [info]: username: "testService1" is available
+2025-09-11T19:35:14.973Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"STJ4VGCKHLF87L2URKFD57UVC3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:35:14.973Z [info]: username: "testService1" is available
+2025-09-11T19:40:58.326Z [info]:  success! username and password are both included in registration
+2025-09-11T19:40:58.339Z [info]: Failed to register new user
+2025-09-11T19:40:58.731Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"4A1L4KVEVFNS9GPQN42F1EF7F7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:40:58.733Z [info]: username: "testService1" is available
+2025-09-11T19:40:58.737Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"HMLDSKEELJEFJU8V8SUVJV0G87VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:40:58.738Z [info]: username: "testService1" is available
+2025-09-11T19:42:22.775Z [info]:  success! username and password are both included in registration
+2025-09-11T19:42:23.249Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"928KFDDHSRDS2TBK6IPK1NJK0BVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:42:23.251Z [info]: username: "testService1" is available
+2025-09-11T19:42:23.254Z [info]: Failed to register new user
+2025-09-11T19:47:27.736Z [info]:  success! username and password are both included in registration
+2025-09-11T19:47:28.152Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"FTM2AEDQGL4KGRQP2EN71FSNANVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:47:28.152Z [info]: username: "testService1" is available
+2025-09-11T19:47:28.153Z [info]: Failed to register new user
+2025-09-11T19:47:44.427Z [info]:  success! username and password are both included in registration
+2025-09-11T19:47:44.831Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"GS446OT89GEQA7FMAONM8GABCFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:47:44.831Z [info]: username: "testService1" is available
+2025-09-11T19:48:20.064Z [info]:  success! username and password are both included in registration
+2025-09-11T19:48:20.490Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"JSBEMMUPKMU9FBKS0SK6GOVR37VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:48:20.491Z [info]: username: "testService1" is available
+2025-09-11T19:48:20.492Z [info]: Failed to register new user
+2025-09-11T19:48:39.119Z [info]:  success! username and password are both included in registration
+2025-09-11T19:48:39.551Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"12LSP30D8OR2NGFMLKJ2PB36P7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:48:39.552Z [info]: username: "testService1" is available
+2025-09-11T19:49:14.015Z [info]:  success! username and password are both included in registration
+2025-09-11T19:49:14.415Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"LBOLNQ1OLOAVLSAQR8RGSDCBMFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:49:14.416Z [info]: username: "testService1" is available
+2025-09-11T19:50:18.746Z [info]:  success! username and password are both included in registration
+2025-09-11T19:50:19.176Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"5P51DC3CN6C8E6DUDS9CIT3RLBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:51:21.875Z [info]:  success! username and password are both included in registration
+2025-09-11T19:51:22.344Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"M0RDDVPL1U52MEOLFA1PMSTH6RVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:51:22.345Z [info]: username: "testService1" is available
+2025-09-11T19:51:22.530Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"H3T8FVJL734UQ9HPRJB02UB95VVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T19:51:22.530Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"H3T8FVJL734UQ9HPRJB02UB95VVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T19:52:08.479Z [info]:  success! username and password are both included in registration
+2025-09-11T19:52:08.922Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"VC1FML45MGI7COQJLEVTVTLG6JVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":2}
+2025-09-11T19:52:08.924Z [info]: username: "testService1" is available
+2025-09-11T19:52:09.110Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"4UHA9HN38PPQ0IGA2SEMA9IVPRVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T19:52:09.110Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"4UHA9HN38PPQ0IGA2SEMA9IVPRVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T19:52:49.477Z [info]:  success! username and password are both included in registration
+2025-09-11T19:52:49.907Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"NM6M627085N937U4VVNFFT63VJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":3}
+2025-09-11T19:52:49.908Z [info]: username: "testService1" is available
+2025-09-11T19:52:50.085Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"Q8H51A6VSVVI1TS11KLEVAH3H7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T19:52:50.086Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"Q8H51A6VSVVI1TS11KLEVAH3H7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T19:54:36.382Z [info]:  success! username and password are both included in registration
+2025-09-11T19:54:37.212Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"53DT5HUM3RKLFEA8IORPQO8HUJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":1}
+2025-09-11T19:54:37.213Z [info]: username: "testService1" is available
+2025-09-11T19:54:37.457Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"7B2VB0UMB7VHHSTI3IK2K75PENVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T19:54:37.458Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"7B2VB0UMB7VHHSTI3IK2K75PENVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T19:54:57.661Z [info]:  success! username and password are both included in registration
+2025-09-11T19:54:58.085Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"J4KS6T8F8TV5SKFD0U33NUTNPNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"27e282a3-aa40-4978-a22b-1a10977bdb16","password":"$2b$10$hNhhJrLRJwpR/QIKeQYuvOcjzxfaB9YLGs8WQDyoYC9wXdIo.SEDq","username":"testService1"}],"ScannedCount":2}
+2025-09-11T19:54:58.086Z [info]: username: {"user_id":"27e282a3-aa40-4978-a22b-1a10977bdb16","password":"$2b$10$hNhhJrLRJwpR/QIKeQYuvOcjzxfaB9YLGs8WQDyoYC9wXdIo.SEDq","username":"testService1"} is already taken
+2025-09-11T19:54:58.087Z [info]: please register with a different username
+2025-09-11T19:54:58.087Z [info]: Failed to register new user
+2025-09-11T19:56:51.346Z [info]:  success! username and password are both included in registration
+2025-09-11T19:56:51.803Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"EQ5DEV135J4MDHS21O1CNCON4JVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":2}
+2025-09-11T19:56:51.804Z [info]: username: "test1" is available
+2025-09-11T19:56:51.986Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"LEGVGQ2NL57SF1VEJ5D71BBUMJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-11T19:56:51.988Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"LEGVGQ2NL57SF1VEJ5D71BBUMJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-11T19:57:01.563Z [info]:  success! username and password are both included in registration
+2025-09-11T19:57:02.041Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"H4JJU4VB3N8LDD36FVV5UHACJ7VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"user_id":"19f1469c-0fa5-4569-bcd1-b3d4b918080a","password":"$2b$10$j79SZ/6wnhJwfEXhdGweWugD7EfEeZQbwwnl4hexwhgHtq.Bkrnlm","username":"test1"}],"ScannedCount":3}
+2025-09-11T19:57:02.043Z [info]: username: {"user_id":"19f1469c-0fa5-4569-bcd1-b3d4b918080a","password":"$2b$10$j79SZ/6wnhJwfEXhdGweWugD7EfEeZQbwwnl4hexwhgHtq.Bkrnlm","username":"test1"} is already taken
+2025-09-11T19:57:02.045Z [info]: please register with a different username
+2025-09-11T19:57:02.047Z [info]: Failed to register new user
