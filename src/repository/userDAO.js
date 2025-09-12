@@ -7,6 +7,10 @@ const documentClient = DynamoDBDocumentClient.from(client);
 
 const TableName = "user_table";
 
+//user_id, username, password, role (default to "employee")
+//must use username not already registered
+//should register with username AND password
+
 async function registerNewUser(user){
     console.log("in userDAO.registerNewUser");
     const command = new PutCommand ({
