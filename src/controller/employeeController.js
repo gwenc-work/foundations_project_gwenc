@@ -3,6 +3,15 @@ const router = express.Router();
 
 const employeeService = require("../service/employeeService");
 
+router.get("/:creator", async(req, res) => { //creator name
+    const ticketData = await employeeService.getAllTicketsByCreatorName(req.params.creator);
+    if(ticketData){
+        res.status(200).json({message: `Tickets returned successfully ${JSON.stringify(ticketData)}`});
+    }else{
+        res.status(400).json({message: "Tickets returned failed", ticketData: req.body});
+    }
+})
+
 router.post("/", validatePostUser, async (req, res) => {
     const ticketData = await employeeService.submitNewTicket(req.body);
     if(ticketData){
@@ -20,5 +29,14 @@ function validatePostUser(req, res, next){
         res.status(400).json({message: "invalid user credentials", data: user});
     }
 }
+
+// function validateData(req, res, next){
+//     const previousTickets = req.body;
+//     if(previousTickets ){
+//         next();
+//     }else{
+//         res.status(400).json({message: "invalid ticket data", data: previousTickets});
+//     }
+// }
 
 module.exports = router;

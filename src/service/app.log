@@ -295,3 +295,16 @@
 2025-09-12T17:44:26.962Z [info]: User does not exist
 2025-09-12T17:44:26.964Z [info]: Amount detected successfully
 2025-09-12T17:44:26.964Z [info]: Description detected successfully
+2025-09-12T18:24:08.562Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"VGKQTG1UONAE1LD5KGFN2Q9B0RVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":7,"Items":[{"amount":100,"ticket_id":"21b065b9-b6ee-4122-aaec-28ab188fb434","description":"resources","creator":"newuser","manager":"Not assigned yet","status":"Pending"},{"amount":50,"ticket_id":"473ed56f-169c-4368-9407-7575a46442e8","description":"cert","creator":"usertest","manager":"Not assigned yet","status":"Pending"},{"amount":180,"ticket_id":"32b88e86-389e-4ffc-9430-fed9b0fd0a4c","description":"dinner","creator":"newuser","manager":"Not assigned yet","status":"Pending"},{"ticket_id":"c18b1754-a697-4ae6-95d9-b47d09322b68","manager":"Not assigned yet","status":"Pending"},{"amount":500,"ticket_id":"9b1f0ae1-fdc0-481f-bdd8-0c8f7f9ace8e","description":"office supplies","creator":"newuser","manager":"Not assigned yet","status":"Pending"},{"amount":1500,"ticket_id":"ec16ed29-a9ca-4c20-9a4f-cd46520526ac","description":"travel","creator":"usertest","manager":"Not assigned yet","status":"Pending"},{"amount":180,"ticket_id":"86fcd1d5-fc64-4a14-910f-73b7271cb808","description":"dinner","creator":"newuser","manager":"Not assigned yet","status":"Pending"}],"ScannedCount":7}
+2025-09-12T18:54:02.811Z [info]: ticket exists
+2025-09-12T18:54:02.822Z [info]: New data posted to ticket: [object Promise]
+2025-09-12T18:56:06.391Z [info]: ticket exists
+2025-09-12T18:56:06.397Z [info]: New data posted to ticket: [object Promise]
+2025-09-12T18:56:06.804Z [info]: ticket updated successfully
+2025-09-12T18:56:25.264Z [info]: ticket exists
+2025-09-12T18:56:25.272Z [info]: New data posted to ticket: [object Promise]
+2025-09-12T18:56:25.692Z [info]: ticket updated successfully
+2025-09-12T19:54:04.989Z [info]: ticket data exists
+2025-09-12T19:54:05.376Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"VMEI4S6UV45L7S1VQK159DE627VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"amount":180,"ticket_id":"32b88e86-389e-4ffc-9430-fed9b0fd0a4c","description":"dinner","creator":"newuser","manager":"Not assigned yet","status":"Pending"}],"ScannedCount":3}
+2025-09-12T19:54:17.583Z [info]: ticket data exists
+2025-09-12T19:54:17.956Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"ANCBBBJ1GQVQK9THMHBQL6TMOFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":2,"Items":[{"amount":2000,"ticket_id":"21b065b9-b6ee-4122-aaec-28ab188fb434","description":"RESOURCES2","creator":"usertest","manager":"admin","status":"Approved"},{"amount":1500,"ticket_id":"ec16ed29-a9ca-4c20-9a4f-cd46520526ac","description":"travel","creator":"usertest","manager":"Not assigned yet","status":"Pending"}],"ScannedCount":3}

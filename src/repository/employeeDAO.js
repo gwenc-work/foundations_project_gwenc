@@ -1,5 +1,5 @@
 const { DynamoDBClient } = require ("@aws-sdk/client-dynamodb");
-const { DynamoDBDocumentClient, PutCommand } = require("@aws-sdk/lib-dynamodb");
+const { DynamoDBDocumentClient, PutCommand, ScanCommand } = require("@aws-sdk/lib-dynamodb");
 const { logger } = require ("../util/logger");
 
 const client = new DynamoDBClient({region: "us-east-2"});
@@ -36,7 +36,28 @@ async function submitNewTicket(ticket){
 //registerNewUser({user_id: "133ca64a-ab9e-489d-b328-869712fc42ff", username: "testDAO1", password: "testDAO1"});
 //submitNewTicket({ticket_id: "ec16ed29-a9ca-4c20-9a4f-cd46520526ac", creator: "usertest", description: "travel", amount: 1500 })
 
+async function getAllTicketsByCreatorName(creator){
+    const command = new ScanCommand({
+        TableName,
+        FilterExpression: "#creator = :creator",
+        ExpressionAttributeNames: {"#creator": "creator"},
+        ExpressionAttributeValues: {":creator": creator}
+    });
+
+    try{
+        const ticketData = await documentClient.send(command);
+        logger.info(`SCAN command to database complete ${JSON.stringify(ticketData)}`);
+        return ticketData.Items; //may adjust
+    }catch(error){
+        logger.error(error);
+        return null;
+    }
+}
+
+//getAllTicketsByCreatorName("newuser");
+
 
 module.exports = {
-    submitNewTicket
+    submitNewTicket,
+    getAllTicketsByCreatorName
 }

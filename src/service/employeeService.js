@@ -8,48 +8,9 @@ const { checkLogin, validateCreator, validateAmount, validateDesc } = require ("
 //check if amount exists
 //check if description exists
 async function submitNewTicket(ticket){ //put
-    // if(checkLogin(ticket.creator)){
-    //     if(validateCreator(ticket.creator)){
-    //         if(validateAmount(ticket.amount)){
-    //             if(validateDesc(ticket.description)){
-    //                 const newTicketData = await employeeDAO.submitNewTicket({
-    //                     ticket_id: crypto.randomUUID(),
-    //                     creator: ticket.creator, //login
-    //                     manager: "Not assigned yet", 
-    //                     description: ticket.description, 
-    //                     amount: ticket.amount, 
-    //                     status: "Pending"
-    //                 })
-    //                 return newTicketData;
-    //             } else{
-    //                 console.log(`desc not found`);
-    //                 logger.info(`Failed to submit a new ticket`);
-    //             }
-    //         }else{
-    //             console.log(`no amount found`);
-    //             logger.info(`Failed to submit a new ticket`);
-    //         }
-    //     }else{
-    //         console.log(`creator not found`);
-    //         logger.info(`Failed to submit a new ticket`);
-    //     }
-    // }else{
-    //     console.log(`login failed`);
-    //     logger.info(`Failed to submit a new ticket`);
-    // }
-
-    //console.log("flag: " + ticket.creator)
-
-    //let loginCheck = await checkLogin(ticket.creator);
     let creatorCheck = await validateCreator(ticket.creator);
     let amountCheck = await validateAmount(ticket);
     let descCheck = await validateDesc(ticket);
-
-    // if (!checkLogin){
-    //     console.log("login false");
-    // }else{
-    //     console.log("login passed");
-    // }
 
     if (!creatorCheck){
         console.log("creator false");
@@ -83,7 +44,20 @@ async function submitNewTicket(ticket){ //put
 //submitNewTicket({ticket_id: "473ed56f-169c-4368-9407-7575a46442e8", creator: "usertest", description: "cert", amount: 50 });
 
 //view past tickets
+async function getAllTicketsByCreatorName(creator){
+    const ticketData = employeeDAO.getAllTicketsByCreatorName(creator);
+    if(ticketData){
+        logger.info(`ticket data exists`);
+        return ticketData;
+    }else{
+        logger.info(`ticket data not found`);
+    }
+
+}
+
+//getAllTicketsByCreatorName("usertest");
 
 module.exports = {
-    submitNewTicket
+    submitNewTicket, 
+    getAllTicketsByCreatorName
 }
