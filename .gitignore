@@ -1,2 +1,5 @@
 node_modules
-app.log
+/app.log
+/src/repository/app.log
+/src/service/app.log
+/src/service/utilService/app.log
