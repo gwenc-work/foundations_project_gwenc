@@ -3,16 +3,16 @@ const userDAO = require ('../../repository/userDAO');
 const userService = require ('../userService');
 const { logger }  = require("../../util/logger");
 
-async function checkLogin (user){ //might delete
-    let loginCheck = await userService.validateUserLogin(user.username, user.password);
-    if(loginCheck) { //if logged in 
-        logger.info(` User is successfully logged in create a ticket`);
-        return true;
-    }else{
-        logger.info(`Please Log in to create a ticket`);
-        return false;
-    }
-}
+// async function checkLogin (user){ //might delete
+//     let loginCheck = await userService.validateUserLogin(user.username, user.password);
+//     if(loginCheck) { //if logged in 
+//         logger.info(` User is successfully logged in create a ticket`);
+//         return true;
+//     }else{
+//         logger.info(`Please Log in to create a ticket`);
+//         return false;
+//     }
+// }
 
 // checkLogin({username: "newuser", password: "testpass"}); //pass
 // checkLogin({username: "newuser2", password: "testpass"}); //fail
@@ -60,7 +60,7 @@ async function validateDesc (ticket){
 
 
 module.exports = {
-    checkLogin,
+    //checkLogin,
     validateCreator,
     validateAmount,
     validateDesc

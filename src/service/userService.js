@@ -2,7 +2,7 @@ const userDAO = require('../repository/userDAO');
 const bcrypt = require('bcrypt');
 const { logger }  = require("../util/logger");
 const { validateFields, validateUniqueUsername } = require ("../service/utilService/validateRegistration");
-const uuid = require('uuid');
+//const uuid = require('uuid');
 
 async function registerNewUser(user){ //put // call validateRegistration functions 
     const saltRounds = 10;
