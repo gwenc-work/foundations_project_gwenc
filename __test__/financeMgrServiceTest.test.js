@@ -1,6 +1,5 @@
 const { getAllPendingTickets, approveTicket, denyTicket } = require ("../src/service/financeMgrService");
 
-//involves usage of repository layer 
 // mock function for GETting all pending tickets
 getAllPendingTicketsMock = jest.fn();
 
@@ -27,6 +26,31 @@ describe("Pending ticket(s) should be retrieved", () => {
         expect(result).toBe(dummyPendingTicket);
     })
 })
+
+//not a pending ticket dummy data
+const dummyNoPendingTicket = { 
+    "creator": "testingnewuser", 
+    "description": "stationary office supplies", 
+    "amount": 5000,
+    "status": "Approved"
+}
+
+//testing purpose: is the code successfully returning null if there are no pending tickets?
+describe("Null should be retrieved if there are no pending tickets", () => {
+    test("should GET null when there are no pending tickets", () => {
+          //arrange
+        getAllPendingTicketsMock.mockReturnValue(null);
+        let result = {};
+
+        //action
+        result = getAllPendingTicketsMock(dummyNoPendingTicket);
+        //console.log(result);
+
+        //assert
+        expect(result).toBeNull;
+    })
+})
+
 
 // mock function for PUTing an approval on a pending ticket
 approveTicketMock = jest.fn();

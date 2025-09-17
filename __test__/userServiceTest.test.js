@@ -1,5 +1,5 @@
 const { registerNewUser, validateUserLogin, getUserByUsername } = ("../src/service/userService");
-const { validateFields } = require ("../src/service/utilService/validateRegistration");
+const { validateFields, validateUniqueUsername } = require ("../src/service/utilService/validateRegistration");
 
 // mock function for posting a new user to db
 registerNewUserMock = jest.fn();
@@ -13,7 +13,7 @@ const dummyNewUser = {
 
 //testing purpose: is the code successfully POSTing a new user?
 describe("New user should be posted and saved to db", () => {
-    test("should POST new user dummy data", () => {
+    test("POST new user dummy data successfully", () => {
           //arrange
         registerNewUserMock.mockReturnValue(dummyNewUser);
         let result = {};
@@ -52,7 +52,6 @@ describe("User should be validated", () => {
     })
 })
 
-//involves usage of repository layer 
 // mock function for GETting a valid user by username
 getUserByUsernameMock = jest.fn()
 
@@ -62,19 +61,20 @@ const dummyFindUser = {
     "password": "testingpass"
 }
 
-//testing purpose: is the code successfully GETting a user?
-describe("User should be retrieved", () => {
+//testing purpose: is the code successfully GETting a username?
+describe("Username should be retrieved", () => {
     test("should GET/Read user", () => {
           //arrange
-        getUserByUsernameMock.mockReturnValue(dummyFindUser);
+        getUserByUsernameMock.mockReturnValue(dummyFindUser.username);
         let result = {};
 
         //action
-        result = getUserByUsernameMock(dummyFindUser);
+        result = getUserByUsernameMock(dummyFindUser.username);
         //console.log(result);
 
         //assert
-        expect(result).toBe(dummyFindUser);
+        expect(result).toBe(dummyFindUser.username);
+        
     })
 })
 
@@ -87,19 +87,12 @@ const dummyValidateUserFields = {
     "password": "password"
 }
 
-//testing purpose: is the code successfully GETting all valid user fields?
+//testing purpose: is the code successfully GETting all valid user fields if both are provided?
 describe("Username and Password should be retrieved", () => {
     test("should GET/Read username and password", () => {
-          //arrange
-        validateFieldsMock.mockReturnValue(dummyValidateUserFields);
-        let result = {};
-
-        //action
-        result = validateFieldsMock(dummyValidateUserFields);
-        //console.log(result);
-
-        //assert
-        expect(result).toBe(dummyValidateUserFields);
+        return validateFields(dummyValidateUserFields).then(data => {
+            expect(data).toBeTruthy;
+        })
     })
 })
 
@@ -109,13 +102,13 @@ const dummyMissingUsername = {
     "password": "password"
 }
 
-const errMsg = "Please input a username AND password during registration";
+// const errMsg = "Please input a username AND password during registration";
 
-//testing purpose: is the code successfully Failing if a username field is missing?
-describe("Error Msg should be retrieved", () => {
-    test("should receive an error msg", () => {
+//testing purpose: is the code successfully failing if a username field is missing?
+describe("Intentionally not inputting a username needed for registration", () => {
+    test("should receive null", () => {
           //arrange
-        validateFieldsMock.mockReturnValue(errMsg);
+        validateFieldsMock.mockReturnValue(null);
         let result = {};
 
         //action
@@ -123,7 +116,7 @@ describe("Error Msg should be retrieved", () => {
         //console.log(result);
 
         //assert
-        expect(result).toBe(errMsg);
+        expect(result).toBeNull;
     })
 })
 
@@ -133,11 +126,11 @@ const dummyMissingPwd = {
     "password": ""
 }
 
-//testing purpose: is the code successfully Failing if a password field is missing?
-describe("Error Msg should be retrieved", () => {
-    test("should receive an error msg", () => {
+//testing purpose: is the code successfully returning null if a password field is missing?
+describe("Intentionally not inputting a password needed for registration", () => {
+    test("should receive null", () => {
           //arrange
-        validateFieldsMock.mockReturnValue(errMsg);
+        validateFieldsMock.mockReturnValue(null);
         let result = {};
 
         //action
@@ -145,8 +138,50 @@ describe("Error Msg should be retrieved", () => {
         //console.log(result);
 
         //assert
-        expect(result).toBe(errMsg);
+        expect(result).toBeNull;
     })
 })
 
-//validateUniqUsername not tested because the function involves usage in the repository layer
+// mock function for validating a username is unique
+validateUniqueUsernameMock = jest.fn()
+
+const dataNotFound = {};
+
+//testing purpose: is the code successfully returning false if a username is not unique?
+describe("Handling a non-unique name for registration", () => {
+    test("should be falsy", () => {
+
+        //arrange
+        let result = {};
+
+        //action
+        result = validateUniqueUsername(dataNotFound);
+        //console.log(result);
+
+        //assert
+        expect(result).toBeFalsy;
+    })
+})
+
+const dummyUniqUserName = {
+    "username": "newname",
+    "password": "newpass"
+}
+
+//testing purpose: is the code successfully returning true if unique username is provided for registration?
+describe("Handling a unique name for registration", () => {
+    test("should be truthy", () => {
+
+        //arrange
+        //validateUniqueUsername.mockReturnValue(true);
+        let result = {};
+        
+        //action
+        result = validateUniqueUsername(dummyUniqUserName);
+        console.log(result);
+
+        //assert
+        expect(result).toBeTruthy;
+    })
+})
+

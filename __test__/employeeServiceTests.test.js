@@ -1,7 +1,6 @@
 const { submitNewTicket, getAllTicketsByCreatorName } = require ('../src/service/employeeService');
 const { validateCreator, validateAmount, validateDesc } = require('../src/service/utilService/validateTicketCreation');
 
-//involves usage of repository layer 
 //mock function for submitNewTicket function
 submitNewTicketMock = jest.fn();
 
@@ -13,7 +12,7 @@ const dummyNewTicket = { //Arrange
 
 //testing purpose: is coding successfully POSTing data?
 describe("Should POST new reimbursement ticket", () => {
-    test("Successfull post a new object", () => {
+    test("Successfull post a new ticket object", () => {
         //arrange
         submitNewTicketMock.mockReturnValue(dummyNewTicket);
         let result = {};
@@ -27,18 +26,16 @@ describe("Should POST new reimbursement ticket", () => {
     })
 })
 
-//involves usage of repository layer 
 //mock function for getAllTicketsByCreatorName function
-
 getAllTicketsByCreatorNameMock = jest.fn();
 
-const dummyTicketObject = { //Arrange
-    "creator": "testingnewuser", 
+const dummyTicketObject = { //Arrange 
+    "creator": "testingnewuser",
     "description": "stationary office supplies", 
     "amount": 5000
 }
 
-//testing purpose: is coding successfully GETting all the data?
+//testing purpose: is coding successfully GETting all the ticket data by creator?
 describe("Should GET allTicketsByCreatorName", () => {
     test("Successfully GET all ticket object by Creator", () => {
         //arrange
@@ -54,6 +51,31 @@ describe("Should GET allTicketsByCreatorName", () => {
         expect(result).toBe(dummyTicketObject);
     })
 })
+
+//empty string for the creator
+const dummyTicketNoCreator = { //Arrange 
+    "creator": "",
+    "description": "stationary office supplies", 
+    "amount": 5000
+}
+
+//testing purpose: is coding successfully throwing an error when a creator does not exist?
+describe("Should GET allTicketsByCreatorName", () => {
+    test("Receive an error when a creator does not exist", () => {
+        //arrange
+        getAllTicketsByCreatorNameMock.mockReturnValue("ticket data not found");
+        let result = {};
+
+        //action
+        result = getAllTicketsByCreatorNameMock (dummyTicketNoCreator.creator);
+        //console.log(dummyTicketObject.creator);
+        //console.log(result);
+
+        //assert
+        expect(result).toBe("ticket data not found");
+    })
+})
+
 
 //mock function for validateCreator function
 validateCreatorMock = jest.fn();

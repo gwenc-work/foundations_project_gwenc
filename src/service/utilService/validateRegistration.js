@@ -10,14 +10,14 @@ const { logger }  = require("../../util/logger");
 async function validateFields(user){  //username AND password entered during registration
     const usernameInput = user.username.length;
     const passwordInput = user.password.length;
-
-    //console.log()
     
-    if(usernameInput > 0 && passwordInput > 0){ //can try "is not null"
-        logger.info(" success! username and password are both included in registration");
-        return (usernameInput && passwordInput);
+    if(usernameInput > 0 && passwordInput > 0){
+        logger.info("success! username and password are both included in registration");
+        //return (user.username && user.password);
+        return true;
     }else{
-        logger.info(" Please input a username AND password during registration");
+        logger.error("Please input a username AND password during registration");
+        return null;
     }
 }
 
@@ -26,7 +26,7 @@ async function validateUniqueUsername(username){ //username is not registered //
     let userNameData = await userDAO.getUserByUsername(username);
     if(userNameData){ // does the username exist?
         logger.info(`username: ${JSON.stringify(userNameData)} is already taken`);
-        logger.info("please register with a different username");
+        logger.error("please register with a different username");
         return false;
     }else{
         logger.info(`username: ${JSON.stringify(username)} is available`);

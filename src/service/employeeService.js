@@ -12,29 +12,33 @@ async function submitNewTicket(ticket){ //put
     let amountCheck = await validateAmount(ticket);
     let descCheck = await validateDesc(ticket);
 
-    if (!creatorCheck){
-        console.log("creator false");
-    } else{
-        console.log("creator passed");
-        if(!amountCheck){
-            console.log("amount not found");
+    try{
+        if (!creatorCheck){
+            throw new Error ("creator false");
         }else{
-            console.log("amount passed");
-            if(!descCheck){
-                console.log("desc not found");
+            console.log("creator passed");
+            if(!amountCheck){
+                throw new Error ("amount not found");
             }else{
-                console.log("desc passed");
-                const newTicketData = await employeeDAO.submitNewTicket({
-                    ticket_id: crypto.randomUUID(),
-                    creator: ticket.creator, //login
-                    manager: "Not assigned yet", 
-                    description: ticket.description, 
-                    amount: ticket.amount, 
-                    status: "Pending"
-                })
-                return newTicketData;
+                console.log("amount passed");
+                if(!descCheck){
+                    throw new Error("description not found");
+                }else{
+                    console.log("desc passed");
+                    const newTicketData = await employeeDAO.submitNewTicket({
+                        ticket_id: crypto.randomUUID(),
+                        creator: ticket.creator, //login
+                        manager: "Not assigned yet", 
+                        description: ticket.description, 
+                        amount: ticket.amount, 
+                        status: "Pending"
+                    })
+                    return newTicketData;
+                }
             }
         }
+    }catch(err){
+        logger.error(err.message)
     }
 
 }
@@ -46,13 +50,17 @@ async function submitNewTicket(ticket){ //put
 //view past tickets
 async function getAllTicketsByCreatorName(creator){
     const ticketData = employeeDAO.getAllTicketsByCreatorName(creator);
-    if(ticketData){
-        logger.info(`ticket data exists`);
-        return ticketData;
-    }else{
-        logger.info(`ticket data not found`);
+    try{
+        if(ticketData || creator != ""){
+            logger.info(`ticket data exists`);
+            return ticketData;
+        }else{
+            logger.error(`ticket data not found`);
+            throw new Error ("ticket data not found");
+        }
+    }catch(err){
+        logger.error(err.message);
     }
-
 }
 
 //getAllTicketsByCreatorName("usertest");

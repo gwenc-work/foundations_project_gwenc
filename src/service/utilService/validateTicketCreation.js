@@ -23,7 +23,7 @@ async function validateCreator(username){
         logger.info(`User is successfully logged and exists`);
         return true;
     } else{
-        logger.info(`User does not exist`);
+        logger.error(`User does not exist`);
         return false;
     }
 }
@@ -35,7 +35,7 @@ async function validateCreator(username){
 async function validateAmount (ticket){
     const amountInput = ticket.amount;
     if (amountInput == 0 || amountInput == "" || amountInput == null){
-        logger.info(`No amount found. Please provide an amount`);
+        logger.error(`No amount found. Please provide an amount`);
         return false;
     }else{
         logger.info(`Amount detected successfully`);
@@ -48,7 +48,7 @@ async function validateAmount (ticket){
 async function validateDesc (ticket){
     const descInput = ticket.description;
     if (descInput == 0 || descInput == "" || descInput == null){
-        logger.info(`No description found. Please provide a description`);
+        logger.error(`No description found. Please provide a description`);
         return false;
     }else{
         logger.info(`Description detected successfully`);

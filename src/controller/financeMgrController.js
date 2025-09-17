@@ -33,9 +33,9 @@ router.post("/Denied", async(req, res) => {
 
 
 //
-router.get("/all-tickets", async (req, res) => {
-    //console.log(req.body.get.status)
+router.get("/", async (req, res) => {
     const ticketData = await financeMgrService.getAllPendingTickets();
+    console.log(JSON.stringify(ticketData));
     if(ticketData){
         res.status(200).json({message: `Ticket retrieval successful ${JSON.stringify(ticketData)}`});
     }else{
@@ -52,12 +52,5 @@ router.get("/all-tickets", async (req, res) => {
 //     }
 // }
 
-
-
-
-
-
-
-// append status after ticket endpoint
 
 module.exports = router;

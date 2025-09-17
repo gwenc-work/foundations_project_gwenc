@@ -6,26 +6,34 @@ const { validateFields, validateUniqueUsername } = require ("../service/utilServ
 
 async function registerNewUser(user){ //put // call validateRegistration functions 
     const saltRounds = 10;
-    if (validateFields(user)){ //check if username and pwd are included'
-        console.log("validateFields passed");
-        let userNameCheck = await validateUniqueUsername(user.username);
-        console.log("usernameCHECK: " + userNameCheck);
-        if(!userNameCheck){ //check if username does not //validateUniqueUsername(user.username)
-            logger.info(`Failed to register new user`);
+    try{
+        if (validateFields(user)){ //check if username and pwd are included'
+            console.log("validateFields passed");
+            let userNameCheck = await validateUniqueUsername(user.username);
+            console.log("usernameCHECK: " + userNameCheck);
+            if(!userNameCheck){ //check if username does not //validateUniqueUsername(user.username)
+                logger.error(`Failed to register new user`);
+                throw new Error ("Username Already Exists");
+            }else{
+                console.log("validateUniqueUserName passed");
+                console.log("userNameCheck2: " + userNameCheck);
+                const password = await bcrypt.hash(user.password, saltRounds);
+                const newUserData = await userDAO.registerNewUser({
+                    user_id: crypto.randomUUID(),
+                    username: user.username,
+                    password
+                })
+                console.log("newUserData: " + newUserData);
+                logger.info(`New user ${JSON.stringify(newUserData)} created`);
+                return newUserData;
+            }
         }else{
-            console.log("validateUniqueUserName passed");
-            console.log("userNameCheck2: " + userNameCheck);
-            const password = await bcrypt.hash(user.password, saltRounds);
-            const newUserData = await userDAO.registerNewUser({
-                user_id: crypto.randomUUID(),
-                username: user.username,
-                password
-            })
-            console.log("newUserData: " + newUserData);
-            logger.info(`New user ${JSON.stringify(newUserData)} created`);
-            return newUserData;
+            throw new Error("Username or Password is missing");
         }
+   }catch (err) {
+        logger.error(err.message);
    }
+   
 }
 
 //registerNewUser({user_id: null, username:"testService1", password:"testService1Pass"});
@@ -34,23 +42,35 @@ async function registerNewUser(user){ //put // call validateRegistration functio
 
 async function validateUserLogin(username, password){
     const userLogin = await getUserByUsername(username);
-    if (userLogin && (await bcrypt.compare(password, userLogin.password))){
-        logger.info(`User: ${userLogin} is logged in successfully`);
-        return userLogin;
-    }else{
-        logger.info(`User: ${userLogin} had invalid credentials`);
+    try{
+        if (userLogin && (await bcrypt.compare(password, userLogin.password))){
+            logger.info(`User: ${userLogin} is logged in successfully`);
+            return userLogin;
+        }else{
+            logger.info(`User: ${userLogin} had invalid credentials`);
+            throw new Error ("User had invalid credentials");
+        }
+    }catch (err) {
+        logger.error(err.message);
     }
 }
 
 async function getUserByUsername (username){
-    if(username){ //if username exists
-        const data = await userDAO.getUserByUsername(username);
-        if(data){ //if data exists
-            logger.info(`Username: ${JSON.stringify(data)} found`);
-            return data;
+    try{
+        if(username){ //if username exists
+            const data = await userDAO.getUserByUsername(username);
+            if(data){ //if data exists
+                logger.info(`Username: ${JSON.stringify(data)} found`);
+                return data;
+            }else{
+                logger.error(`Username: ${username} not found`);
+                throw new Error ("Username is not found");
+            }
         }else{
-            logger.info(`Username: ${username} not found`);
+            throw new Error ("Username does not exist");
         }
+    }catch(err){
+        logger.error(err.message);
     }
 }
 
