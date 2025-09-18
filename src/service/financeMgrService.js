@@ -1,11 +1,8 @@
 const financeMgrDAO = require ('../repository/financeMgrDAO');
 const employeeDAO = require('../repository/employeeDAO');
 const { logger } = require("../util/logger")
-//const { checkLogin, validateCreator, validateAmount, validateDesc } = require ("../service/utilService/validateTicketCreation");
 
-
-//get/view all pending tickets
-async function getAllPendingTickets(){
+async function getAllPendingTickets(){ //get/view all pending tickets
     const pendingTicketData = await financeMgrDAO.getAllPendingTickets();
     try{
         if(pendingTicketData){
@@ -22,8 +19,7 @@ async function getAllPendingTickets(){
 
 //getAllPendingTickets();
 
-//method to approve ticket
-async function approveTicket(ticket){ //put command
+async function approveTicket(ticket){//method to change ticket status to approved
     try{
         if(!ticket){ //if ticket does not exist
             throw new Error ("ticket does not exist");
@@ -47,7 +43,7 @@ async function approveTicket(ticket){ //put command
 
 //approveTicket({ticket_id: "21b065b9-b6ee-4122-aaec-28ab188fb434", creator: "usertest", description: "RESOURCES2", amount: 2000, manager: "mr.smith", status: "Approved"});
 
-async function denyTicket(ticket){ //put command
+async function denyTicket(ticket){ //method to change ticket status to denied
     try{
         if(!ticket){ //if ticket does not exist
             throw new Error ("ticket does not exist");

@@ -7,7 +7,8 @@ const { checkLogin, validateCreator, validateAmount, validateDesc } = require ("
 //check if creator exists, looking for username in user_table
 //check if amount exists
 //check if description exists
-async function submitNewTicket(ticket){ //put
+//Post a ticket if fields exist, handle an error if not
+async function submitNewTicket(ticket){ 
     let creatorCheck = await validateCreator(ticket.creator);
     let amountCheck = await validateAmount(ticket);
     let descCheck = await validateDesc(ticket);
@@ -16,15 +17,15 @@ async function submitNewTicket(ticket){ //put
         if (!creatorCheck){
             throw new Error ("creator false");
         }else{
-            console.log("creator passed");
+            //console.log("creator passed");
             if(!amountCheck){
                 throw new Error ("amount not found");
             }else{
-                console.log("amount passed");
+                //console.log("amount passed");
                 if(!descCheck){
                     throw new Error("description not found");
                 }else{
-                    console.log("desc passed");
+                    //console.log("desc passed");
                     const newTicketData = await employeeDAO.submitNewTicket({
                         ticket_id: crypto.randomUUID(),
                         creator: ticket.creator, //login
@@ -47,8 +48,7 @@ async function submitNewTicket(ticket){ //put
 //submitNewTicket({creator: "newuser", description: "resources", amount: 100 });
 //submitNewTicket({ticket_id: "473ed56f-169c-4368-9407-7575a46442e8", creator: "usertest", description: "cert", amount: 50 });
 
-//view past tickets
-async function getAllTicketsByCreatorName(creator){
+async function getAllTicketsByCreatorName(creator){//view past tickets by a username
     const ticketData = employeeDAO.getAllTicketsByCreatorName(creator);
     try{
         if(ticketData || creator != ""){

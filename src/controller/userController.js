@@ -1,14 +1,14 @@
 const express = require('express')
 const router = express.Router();
 const jwt = require('jsonwebtoken');
-const bcrypt = require("bcrypt");
+//const bcrypt = require("bcrypt");
 
 const secretKey = "my-jwt-key";
 
 const userService = require("../service/userService");
-const { authToken } = require("../util/jwt");
+//const { authToken } = require("../util/jwt");
 
-router.post("/", validatePostUser, async (req, res) => {
+router.post("/", validatePostUser, async (req, res) => { //register/post a new user
     const userData = await userService.registerNewUser(req.body);
     if(userData){
         res.status(201).json({message: `New user registered ${JSON.stringify(userData)}`});
@@ -17,7 +17,7 @@ router.post("/", validatePostUser, async (req, res) => {
     }
 })
 
-router.post("/login", async (req, res) => {
+router.post("/login", async (req, res) => { //login authentication as a user
     const { username, password } = req.body;
     const userData = await userService.validateUserLogin(username, password);
     if(userData){
@@ -37,7 +37,7 @@ router.post("/login", async (req, res) => {
     }
 })
 
-function validatePostUser(req, res, next){
+function validatePostUser(req, res, next){ //validate a user exists
     const user = req.body;
     if(user.username && user.password){
         next();

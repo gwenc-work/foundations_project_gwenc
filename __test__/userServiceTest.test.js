@@ -4,7 +4,6 @@ const { validateFields, validateUniqueUsername } = require ("../src/service/util
 // mock function for posting a new user to db
 registerNewUserMock = jest.fn();
 
-
 // dummy new user for registration
 const dummyNewUser = {
     "username": "testingnewuser",
@@ -26,6 +25,7 @@ describe("New user should be posted and saved to db", () => {
         expect(result).toBe(dummyNewUser);
     })
 })
+
 
 // mock function for GETting a valid user login
 validateUserLoginMock = jest.fn();
@@ -51,6 +51,7 @@ describe("User should be validated", () => {
         expect(result).toBe(dummyUserLogin);
     })
 })
+
 
 // mock function for GETting a valid user by username
 getUserByUsernameMock = jest.fn()
@@ -78,6 +79,7 @@ describe("Username should be retrieved", () => {
     })
 })
 
+
 // mock function for GETting valid registration fields
 validateFieldsMock = jest.fn()
 
@@ -96,13 +98,12 @@ describe("Username and Password should be retrieved", () => {
     })
 })
 
+
 // dummy data for missing username
 const dummyMissingUsername = {
     "username": "",
     "password": "password"
 }
-
-// const errMsg = "Please input a username AND password during registration";
 
 //testing purpose: is the code successfully failing if a username field is missing?
 describe("Intentionally not inputting a username needed for registration", () => {
@@ -119,6 +120,7 @@ describe("Intentionally not inputting a username needed for registration", () =>
         expect(result).toBeNull;
     })
 })
+
 
 // dummy data for missing password
 const dummyMissingPwd = {
@@ -142,6 +144,7 @@ describe("Intentionally not inputting a password needed for registration", () =>
     })
 })
 
+
 // mock function for validating a username is unique
 validateUniqueUsernameMock = jest.fn()
 
@@ -163,6 +166,7 @@ describe("Handling a non-unique name for registration", () => {
     })
 })
 
+// dummy data for a unique username
 const dummyUniqUserName = {
     "username": "newname",
     "password": "newpass"

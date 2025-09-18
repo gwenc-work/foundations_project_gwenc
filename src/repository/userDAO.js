@@ -7,11 +7,10 @@ const documentClient = DynamoDBDocumentClient.from(client);
 
 const TableName = "user_table";
 
-//user_id, username, password, role (default to "employee")
+//user_id, username, password
 //must use username not already registered
 //should register with username AND password
-
-async function registerNewUser(user){
+async function registerNewUser(user){ //register a new user
     console.log("in userDAO.registerNewUser");
     const command = new PutCommand ({
         TableName,
@@ -33,31 +32,7 @@ async function registerNewUser(user){
 
 //registerNewUser({user_id: "133ca64a-ab9e-489d-b328-869712fc42ff", username: "testDAO1", password: "testDAO1"});
 
-// async function getUserByUsername (username){  //userDAO.getUserByUsername(username)
-//     console.log("in userDAO.getUserByUserName");
-//     console.log("username: " + username);
-//     const command = new ScanCommand ({ 
-//         TableName,
-//         FilterExpression: "#username = :username", //# for attr : for value
-//         ExpressionAttributeNames: {"#username": "username"}, //placeholder for username attribute
-//         ExpressionAtrributeValues: {":username" : username} //value for username attribute
-//     });
-
-//     try{
-//         console.log("in try block");
-//         const userData = await documentClient.send(command);
-//         console.log("userData: " + userData);
-//         logger.info (`Successful scan command to db ${JSON.stringify(userData)}`)
-//         console.log("userData.Item[0] " + userData.Items[0]);
-//         return userData.Items[0]; //might have to be 0 or 1
-
-//     }catch(error){
-//         console.log("in catch block");
-//         logger.error(error);
-//     }
-// }
-
-async function getUserByUsername(username){
+async function getUserByUsername(username){ //get a user by their username
     const command = new ScanCommand({
         TableName,
         FilterExpression: "#username = :username",

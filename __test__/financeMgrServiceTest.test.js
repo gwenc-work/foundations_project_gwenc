@@ -27,6 +27,7 @@ describe("Pending ticket(s) should be retrieved", () => {
     })
 })
 
+
 //not a pending ticket dummy data
 const dummyNoPendingTicket = { 
     "creator": "testingnewuser", 
@@ -63,6 +64,7 @@ const dummyTicketApprove = {
     "status": "Approved"
 }
 
+// dummy pending ticket to pass in
 const dummyTicketPending = { 
     "creator": "testingnewuser", 
     "description": "stationary office supplies", 
@@ -86,6 +88,7 @@ describe("Ticket should switch to Approved status", () => {
 
     })
 })
+
 
 // mock function for PUTing an denial on a pending ticket
 denyTicketMock = jest.fn();

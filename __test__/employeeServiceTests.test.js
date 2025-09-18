@@ -26,6 +26,7 @@ describe("Should POST new reimbursement ticket", () => {
     })
 })
 
+
 //mock function for getAllTicketsByCreatorName function
 getAllTicketsByCreatorNameMock = jest.fn();
 
@@ -51,6 +52,7 @@ describe("Should GET allTicketsByCreatorName", () => {
         expect(result).toBe(dummyTicketObject);
     })
 })
+
 
 //empty string for the creator
 const dummyTicketNoCreator = { //Arrange 
@@ -100,6 +102,7 @@ describe("Should GET True for an existing username", () => {
     })
 })
 
+
 //mock function for validateAmount function
 validateAmountMock = jest.fn();
 
@@ -125,12 +128,12 @@ describe("Should GET false for no amount", () => {
     })
 })
 
-
 const dummyTicketWithAmount = { //Arrange
     "creator": "testingnewuser", 
     "description": "stationary office supplies", 
     "amount": 10000
 }
+
 
 //testing purpose: is coding successfully GETting true for a present amount?
 describe("Should GET true for an amount", () => {
@@ -147,6 +150,7 @@ describe("Should GET true for an amount", () => {
         expect(result).toBe(true);
     })
 })
+
 
 //mock function for validateDesc function
 validateDescMock = jest.fn();

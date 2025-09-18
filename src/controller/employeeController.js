@@ -3,7 +3,7 @@ const router = express.Router();
 
 const employeeService = require("../service/employeeService");
 
-router.get("/:creator", async(req, res) => { //creator name
+router.get("/:creator", async(req, res) => { //creator name passed in
     const ticketData = await employeeService.getAllTicketsByCreatorName(req.params.creator);
     if(ticketData){
         res.status(200).json({message: `Tickets returned successfully ${JSON.stringify(ticketData)}`});
@@ -12,7 +12,7 @@ router.get("/:creator", async(req, res) => { //creator name
     }
 })
 
-router.post("/", validatePostUser, async (req, res) => {
+router.post("/", validatePostUser, async (req, res) => { //post a new ticket
     const ticketData = await employeeService.submitNewTicket(req.body);
     if(ticketData){
         res.status(201).json({message: `Ticket creation successful ${JSON.stringify(ticketData)}`});
@@ -21,7 +21,7 @@ router.post("/", validatePostUser, async (req, res) => {
     }
 })
 
-function validatePostUser(req, res, next){
+function validatePostUser(req, res, next){ //valid a user who will create a new ticket
     const userCreator = req.body;
     if(userCreator.creator){
         next();
@@ -29,14 +29,5 @@ function validatePostUser(req, res, next){
         res.status(400).json({message: "invalid user credentials", data: user});
     }
 }
-
-// function validateData(req, res, next){
-//     const previousTickets = req.body;
-//     if(previousTickets ){
-//         next();
-//     }else{
-//         res.status(400).json({message: "invalid ticket data", data: previousTickets});
-//     }
-// }
 
 module.exports = router;

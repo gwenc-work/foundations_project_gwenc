@@ -4,26 +4,27 @@ const { logger }  = require("../util/logger");
 const { validateFields, validateUniqueUsername } = require ("../service/utilService/validateRegistration");
 //const uuid = require('uuid');
 
+//Post a new user
 async function registerNewUser(user){ //put // call validateRegistration functions 
     const saltRounds = 10;
     try{
         if (validateFields(user)){ //check if username and pwd are included'
-            console.log("validateFields passed");
+            //console.log("validateFields passed");
             let userNameCheck = await validateUniqueUsername(user.username);
-            console.log("usernameCHECK: " + userNameCheck);
+            //console.log("usernameCHECK: " + userNameCheck);
             if(!userNameCheck){ //check if username does not //validateUniqueUsername(user.username)
                 logger.error(`Failed to register new user`);
                 throw new Error ("Username Already Exists");
             }else{
-                console.log("validateUniqueUserName passed");
-                console.log("userNameCheck2: " + userNameCheck);
+                // console.log("validateUniqueUserName passed");
+                // console.log("userNameCheck2: " + userNameCheck);
                 const password = await bcrypt.hash(user.password, saltRounds);
                 const newUserData = await userDAO.registerNewUser({
                     user_id: crypto.randomUUID(),
                     username: user.username,
                     password
                 })
-                console.log("newUserData: " + newUserData);
+                // console.log("newUserData: " + newUserData);
                 logger.info(`New user ${JSON.stringify(newUserData)} created`);
                 return newUserData;
             }
@@ -40,7 +41,7 @@ async function registerNewUser(user){ //put // call validateRegistration functio
 //registerNewUser({user_id: null, username:"testDAO1", password:"testService1Pass"});
 //registerNewUser({user_id: null, username:"test1", password:"testService1Pass"});
 
-async function validateUserLogin(username, password){
+async function validateUserLogin(username, password){ //validate a user attempting to login
     const userLogin = await getUserByUsername(username);
     try{
         if (userLogin && (await bcrypt.compare(password, userLogin.password))){
@@ -55,7 +56,7 @@ async function validateUserLogin(username, password){
     }
 }
 
-async function getUserByUsername (username){
+async function getUserByUsername (username){ //get a user by their username
     try{
         if(username){ //if username exists
             const data = await userDAO.getUserByUsername(username);

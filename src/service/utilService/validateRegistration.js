@@ -2,12 +2,8 @@ const userDAO = require ('../../repository/userDAO');
 const bcrypt = require('bcrypt');
 const { logger }  = require("../../util/logger");
 
-//user_id, username, password, role (default to "employee")
-
-//must use username not already registered
-//should register with username AND password
-
-async function validateFields(user){  //username AND password entered during registration
+//must register with username AND password
+async function validateFields(user){  //ensure username AND password were entered during registration
     const usernameInput = user.username.length;
     const passwordInput = user.password.length;
     
@@ -21,8 +17,8 @@ async function validateFields(user){  //username AND password entered during reg
     }
 }
 
-
-async function validateUniqueUsername(username){ //username is not registered //check
+//must use username not already registered
+async function validateUniqueUsername(username){ //ensure username is not registered
     let userNameData = await userDAO.getUserByUsername(username);
     if(userNameData){ // does the username exist?
         logger.info(`username: ${JSON.stringify(userNameData)} is already taken`);

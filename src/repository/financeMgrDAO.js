@@ -7,7 +7,7 @@ const documentClient = DynamoDBDocumentClient.from(client);
 
 const TableName = "tickets_table";
 
-async function getAllPendingTickets(){
+async function getAllPendingTickets(){ //get all tickets with a status of pending
     const command = new ScanCommand({
         TableName,
         FilterExpression: "#status = :status",
@@ -18,7 +18,7 @@ async function getAllPendingTickets(){
     try{
         const ticketData = await documentClient.send(command);
         logger.info(`SCAN command to database complete ${JSON.stringify(ticketData)}`);
-        return ticketData.Items; //may adjust
+        return ticketData.Items;
     }catch(error){
         logger.error(error);
         return null;
@@ -27,7 +27,7 @@ async function getAllPendingTickets(){
 
 //getAllPendingTickets();
 
-async function editTicket(ticket){
+async function editTicket(ticket){ //edit a ticket
     const command = new PutCommand({
         TableName,
         Item: ticket
@@ -44,7 +44,6 @@ async function editTicket(ticket){
 }
 
 //editTicket({ticket_id: "21b065b9-b6ee-4122-aaec-28ab188fb434", creator: "usertest", description: "RESOURCES2", amount: 2000, manager: "mr.smith", status: "Approved"});
-
 
 module.exports = {
     getAllPendingTickets,

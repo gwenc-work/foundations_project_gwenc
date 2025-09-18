@@ -7,20 +7,11 @@ const documentClient = DynamoDBDocumentClient.from(client);
 
 const TableName = "tickets_table";
 
-// ticket_id, creator, manager(not assigned yet), description, amount, status(default to pending)
-//submit tickets
-async function submitNewTicket(ticket){
+// ticket_id, creator, manager(default to not assigned yet), description, amount, status(default to pending)
+async function submitNewTicket(ticket){ //submit tickets
     const command = new PutCommand ({
         TableName,
         Item: ticket
-        // Item: {
-        //     ticket_id: ticket.ticket_id,
-        //     creator: ticket.creator, //login
-        //     manager: "Not assigned yet", 
-        //     description: ticket.description, 
-        //     amount: ticket.amount, 
-        //     status: "Pending"
-        // }
     })
 
     try{
@@ -36,7 +27,7 @@ async function submitNewTicket(ticket){
 //registerNewUser({user_id: "133ca64a-ab9e-489d-b328-869712fc42ff", username: "testDAO1", password: "testDAO1"});
 //submitNewTicket({ticket_id: "ec16ed29-a9ca-4c20-9a4f-cd46520526ac", creator: "usertest", description: "travel", amount: 1500 })
 
-async function getAllTicketsByCreatorName(creator){
+async function getAllTicketsByCreatorName(creator){ //get all tickets by a username
     const command = new ScanCommand({
         TableName,
         FilterExpression: "#creator = :creator",
@@ -55,7 +46,6 @@ async function getAllTicketsByCreatorName(creator){
 }
 
 //getAllTicketsByCreatorName("newuser");
-
 
 module.exports = {
     submitNewTicket,
