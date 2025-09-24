@@ -20,6 +20,7 @@ async function getAllPendingTickets(){ //get/view all pending tickets
 //getAllPendingTickets();
 
 async function approveTicket(ticket){//method to change ticket status to approved
+    console.log("TICKET STATUS: " + ticket.status);
     try{
         if(!ticket){ //if ticket does not exist
             throw new Error ("ticket does not exist");
@@ -67,8 +68,30 @@ async function denyTicket(ticket){ //method to change ticket status to denied
 
 //denyTicket({ticket_id: "21b065b9-b6ee-4122-aaec-28ab188fb434", creator: "usertest", description: "RESOURCES2", amount: 2000});
 
+async function getTicketById(ticket_id){ //get a user by their username
+    try{
+        if(ticket_id){ //if username exists
+            const data = await financeMgrDAO.getTicketById(ticket_id);
+            if(data){ //if data exists
+                logger.info(`Ticket: ${JSON.stringify(data)} found`);
+                return data;
+            }else{
+                logger.error(`Ticket: ${username} not found`);
+                throw new Error ("Ticket is not found");
+            }
+        }else{
+            throw new Error ("Ticket does not exist");
+        }
+    }catch(err){
+        logger.error(err.message);
+    }
+}
+
+//getTicketById("8b94e2c0-c853-4aae-bb97-25f4f366eb45");
+
 module.exports = {
     getAllPendingTickets,
     approveTicket,
-    denyTicket
+    denyTicket,
+    getTicketById
 }

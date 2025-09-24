@@ -1,7 +1,7 @@
 const express = require('express');
-const app = express();
 const { logger } = require('./src/util/logger');
 const { authToken } = require('./src/util/jwt');
+const app = express();
 
 const userController = require('./src/controller/userController');
 const employeeController = require('./src/controller/employeeController');
@@ -19,7 +19,7 @@ app.get("/protected", authToken, (req, res) => {
 
 app.use("/tickets", employeeController);
 
-app.use("/tickets", financeMgrController);
+app.use("/tickets/admin", financeMgrController);
 
 
 app.listen(PORT, () => {

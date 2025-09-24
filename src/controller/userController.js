@@ -8,7 +8,7 @@ const secretKey = "my-jwt-key";
 const userService = require("../service/userService");
 //const { authToken } = require("../util/jwt");
 
-router.post("/", validatePostUser, async (req, res) => { //register/post a new user
+router.post("/register", validatePostUser, async (req, res) => { //register/post a new user
     const userData = await userService.registerNewUser(req.body);
     if(userData){
         res.status(201).json({message: `New user registered ${JSON.stringify(userData)}`});
@@ -18,20 +18,25 @@ router.post("/", validatePostUser, async (req, res) => { //register/post a new u
 })
 
 router.post("/login", async (req, res) => { //login authentication as a user
-    const { username, password } = req.body;
+    const { username, password} = req.body;
     const userData = await userService.validateUserLogin(username, password);
+    const roleData = await userService.getUserByUsername(username);
     if(userData){
         const token = jwt.sign(
             {
                 id: userData.user_id,
-                username
+                username,
+                role: roleData.role
             },
             secretKey,
             {
                 expiresIn: "10m"
             }
         );
-        res.status(200).json({message: "login successful", token});
+        // console.log("ROLE:" + roleData.role);
+        // console.log("ROLE DATA: "+ roleData.user_id + " " + roleData.username + " " + roleData.role );
+        res.status(200).json({message: `${roleData.role} login successful`, token});
+        //res.status(200).json({message: "login successful", token});
     }else{
         res.status(400).json({message: "login invalid"});
     }

@@ -22,7 +22,8 @@ async function registerNewUser(user){ //put // call validateRegistration functio
                 const newUserData = await userDAO.registerNewUser({
                     user_id: crypto.randomUUID(),
                     username: user.username,
-                    password
+                    password,
+                    role: "Employee" //default a user registration to "Employee"  //user.role (used to create admin)
                 })
                 // console.log("newUserData: " + newUserData);
                 logger.info(`New user ${JSON.stringify(newUserData)} created`);
@@ -37,9 +38,14 @@ async function registerNewUser(user){ //put // call validateRegistration functio
    
 }
 
-//registerNewUser({user_id: null, username:"testService1", password:"testService1Pass"});
+//registerNewUser({user_id: null, username:"testService1", password:"testService1Pass", role: null});
 //registerNewUser({user_id: null, username:"testDAO1", password:"testService1Pass"});
 //registerNewUser({user_id: null, username:"test1", password:"testService1Pass"});
+
+//creating admin
+// registerNewUser({user_id: null, username:"admin2", password:"admin2Pass", role: "Manager"});
+// registerNewUser({user_id: null, username:"admin3", password:"admin3Pass", role: "Manager"});
+// registerNewUser({user_id: null, username:"admin4", password:"admin4Pass", role: "Manager"});
 
 async function validateUserLogin(username, password){ //validate a user attempting to login
     const userLogin = await getUserByUsername(username);

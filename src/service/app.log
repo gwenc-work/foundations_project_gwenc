@@ -311,3 +311,47 @@
 2025-09-17T19:32:04.670Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"UM30R18GRPFV4IVEG9CKP98Q63VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":3,"Items":[{"amount":180,"ticket_id":"32b88e86-389e-4ffc-9430-fed9b0fd0a4c","description":"dinner","creator":"newuser","manager":"Not assigned yet","status":"Pending"},{"amount":1500,"ticket_id":"ec16ed29-a9ca-4c20-9a4f-cd46520526ac","description":"travel","creator":"usertest","manager":"Not assigned yet","status":"Pending"},{"amount":500,"ticket_id":"bcf18928-f506-4f35-aa64-680b41043c46","description":"office supplies","creator":"newuser2","manager":"Not assigned yet","status":"Pending"}],"ScannedCount":4}
 2025-09-17T19:32:24.875Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"HU146DAQ5083V3GJN8MITD3A0VVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":3,"Items":[{"amount":180,"ticket_id":"32b88e86-389e-4ffc-9430-fed9b0fd0a4c","description":"dinner","creator":"newuser","manager":"Not assigned yet","status":"Pending"},{"amount":1500,"ticket_id":"ec16ed29-a9ca-4c20-9a4f-cd46520526ac","description":"travel","creator":"usertest","manager":"Not assigned yet","status":"Pending"},{"amount":500,"ticket_id":"bcf18928-f506-4f35-aa64-680b41043c46","description":"office supplies","creator":"newuser2","manager":"Not assigned yet","status":"Pending"}],"ScannedCount":4}
 2025-09-17T19:32:24.879Z [info]: data exists
+2025-09-19T21:11:23.752Z [info]: success! username and password are both included in registration
+2025-09-19T21:11:24.196Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"Q6BALE70L4MF1RT16Q93155733VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":2}
+2025-09-19T21:11:24.200Z [info]: username: "testService1" is available
+2025-09-19T21:11:24.399Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"IGNUV2T8THRKT5OLG1IO0L4CCFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-19T21:11:24.400Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"IGNUV2T8THRKT5OLG1IO0L4CCFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-19T21:23:19.363Z [info]: success! username and password are both included in registration
+2025-09-19T21:23:19.758Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"KJQ3G4FHNTN791S3L17G67SKONVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":2}
+2025-09-19T21:23:19.760Z [info]: username: "admin1" is available
+2025-09-19T21:23:19.940Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"EV2TG2PCJ87KF0B94KJ1AKE2MNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-19T21:23:19.942Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"EV2TG2PCJ87KF0B94KJ1AKE2MNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-19T21:23:57.866Z [info]: success! username and password are both included in registration
+2025-09-19T21:23:58.246Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"OKOQJS7MP5IEN7EA9CHV19H6JJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"password":"$2b$10$cVIGn9w7BRnlAomyOKzn/OE5VaRDJ3Uwc9gnsn41EbA8aYzbgSzL.","user_id":"bb89bf9f-7812-4326-a220-b24d6b79ca3f","username":"admin1","role":"Employee"}],"ScannedCount":3}
+2025-09-19T21:23:58.249Z [info]: username: {"password":"$2b$10$cVIGn9w7BRnlAomyOKzn/OE5VaRDJ3Uwc9gnsn41EbA8aYzbgSzL.","user_id":"bb89bf9f-7812-4326-a220-b24d6b79ca3f","username":"admin1","role":"Employee"} is already taken
+2025-09-19T21:23:58.251Z [error]: please register with a different username
+2025-09-19T21:23:58.252Z [error]: Failed to register new user
+2025-09-19T21:23:58.253Z [error]: Username Already Exists
+2025-09-19T21:24:15.128Z [info]: success! username and password are both included in registration
+2025-09-19T21:24:15.675Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"H4E84GQQ8CIFVULDADOAVD8QCNVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":2}
+2025-09-19T21:24:15.676Z [info]: username: "admin1" is available
+2025-09-19T21:24:15.843Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"US1PJ82MARH2AFL07QCU3N81JFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-19T21:24:15.845Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"US1PJ82MARH2AFL07QCU3N81JFVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-19T21:25:05.799Z [info]: success! username and password are both included in registration
+2025-09-19T21:25:06.190Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"7IC3JNQC2Q1L0M72TGGM9TBF3JVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"password":"$2b$10$fToXXL9YVBLDtOalMhOe7uWC7zKxZCBWYhirqYdrI6LPolkhUJHry","user_id":"eed05b73-35b7-43cd-85df-d02bec751c27","username":"admin1","role":"Manager"}],"ScannedCount":3}
+2025-09-19T21:25:06.192Z [info]: username: {"password":"$2b$10$fToXXL9YVBLDtOalMhOe7uWC7zKxZCBWYhirqYdrI6LPolkhUJHry","user_id":"eed05b73-35b7-43cd-85df-d02bec751c27","username":"admin1","role":"Manager"} is already taken
+2025-09-19T21:25:06.194Z [error]: please register with a different username
+2025-09-19T21:25:06.195Z [error]: Failed to register new user
+2025-09-19T21:25:06.196Z [error]: Username Already Exists
+2025-09-19T21:25:18.096Z [info]: success! username and password are both included in registration
+2025-09-19T21:25:18.124Z [info]: success! username and password are both included in registration
+2025-09-19T21:25:18.127Z [info]: success! username and password are both included in registration
+2025-09-19T21:25:18.555Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"TS0G947150HMJDGSL4NH500BI3VV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":3}
+2025-09-19T21:25:18.559Z [info]: username: "admin4" is available
+2025-09-19T21:25:18.564Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"FED4LL7A0MGIG89V535BRCEVVBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":3}
+2025-09-19T21:25:18.566Z [info]: username: "admin3" is available
+2025-09-19T21:25:18.568Z [info]: Successful scan command to db {"$metadata":{"httpStatusCode":200,"requestId":"O8CKCSUUBFTGNCA7R887NNMAGBVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":0,"Items":[],"ScannedCount":3}
+2025-09-19T21:25:18.572Z [info]: username: "admin2" is available
+2025-09-19T21:25:18.741Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"TQ81E67J8NI7E08VJIV7U7LJ1FVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-19T21:25:18.750Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"TQ81E67J8NI7E08VJIV7U7LJ1FVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-19T21:25:18.760Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"QB04H661O43PCPSEUN3BNHP7MJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-19T21:25:18.764Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"QB04H661O43PCPSEUN3BNHP7MJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-19T21:25:18.782Z [info]: Successful put command to db {"$metadata":{"httpStatusCode":200,"requestId":"2CP70I6HB0G5AT31VRPAN98SNJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}}
+2025-09-19T21:25:18.785Z [info]: New user {"$metadata":{"httpStatusCode":200,"requestId":"2CP70I6HB0G5AT31VRPAN98SNJVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0}} created
+2025-09-20T02:31:37.884Z [info]: SCAN command to database complete {"$metadata":{"httpStatusCode":200,"requestId":"V1EF1M5SC25AA2TOEAH7IE0AAVVV4KQNSO5AEMVJF66Q9ASUAAJG","attempts":1,"totalRetryDelay":0},"Count":1,"Items":[{"amount":50,"ticket_id":"8b94e2c0-c853-4aae-bb97-25f4f366eb45","description":"certification fee","creator":"newuser2","manager":"Not assigned yet","status":"Pending"}],"ScannedCount":9}
+2025-09-20T02:31:37.888Z [info]: Ticket: {"amount":50,"ticket_id":"8b94e2c0-c853-4aae-bb97-25f4f366eb45","description":"certification fee","creator":"newuser2","manager":"Not assigned yet","status":"Pending"} found

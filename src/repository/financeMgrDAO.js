@@ -45,7 +45,27 @@ async function editTicket(ticket){ //edit a ticket
 
 //editTicket({ticket_id: "21b065b9-b6ee-4122-aaec-28ab188fb434", creator: "usertest", description: "RESOURCES2", amount: 2000, manager: "mr.smith", status: "Approved"});
 
+async function getTicketById(ticket_id){ //edit a ticket
+    const command = new ScanCommand({
+        TableName,
+        FilterExpression: "#ticket_id = :ticket_id",
+        ExpressionAttributeNames: {"#ticket_id": "ticket_id"},
+        ExpressionAttributeValues: {":ticket_id": ticket_id}
+    })
+
+    try{
+        const ticketData = await documentClient.send(command);
+        logger.info(`SCAN command to database complete ${JSON.stringify(ticketData)}`);
+        return ticketData.Items[0];
+    }catch(error){
+        logger.error(error);
+    }
+}
+
+//getTicketById("8b94e2c0-c853-4aae-bb97-25f4f366eb45");
+
 module.exports = {
     getAllPendingTickets,
-    editTicket
+    editTicket,
+    getTicketById
 }

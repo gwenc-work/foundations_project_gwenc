@@ -7,7 +7,7 @@ const documentClient = DynamoDBDocumentClient.from(client);
 
 const TableName = "user_table";
 
-//user_id, username, password
+//user_id, username, password, role
 //must use username not already registered
 //should register with username AND password
 async function registerNewUser(user){ //register a new user
@@ -30,7 +30,7 @@ async function registerNewUser(user){ //register a new user
     }
 }
 
-//registerNewUser({user_id: "133ca64a-ab9e-489d-b328-869712fc42ff", username: "testDAO1", password: "testDAO1"});
+//registerNewUser({user_id: "133ca64a-ab9e-489d-b328-869712fc42ff", username: "testDAO1", password: "testDAO1", role: "employee"});
 
 async function getUserByUsername(username){ //get a user by their username
     const command = new ScanCommand({
@@ -51,7 +51,7 @@ async function getUserByUsername(username){ //get a user by their username
     }
 }
 
-//getUserByUsername("test1");
+//getUserByUsername("admin1");
 //getUserByUsername("testDAO1");
 
 module.exports = {

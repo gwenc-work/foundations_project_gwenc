@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">19.23% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/25</span>
+                <span class='fraction'>5/26</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">20% </span>
+                <span class="strong">19.23% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/25</span>
+                <span class='fraction'>5/26</span>
             </div>
         
             
@@ -126,7 +126,14 @@
 <a name='L61'></a><a href='#L61'>61</a>
 <a name='L62'></a><a href='#L62'>62</a>
 <a name='L63'></a><a href='#L63'>63</a>
-<a name='L64'></a><a href='#L64'>64</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L64'></a><a href='#L64'>64</a>
+<a name='L65'></a><a href='#L65'>65</a>
+<a name='L66'></a><a href='#L66'>66</a>
+<a name='L67'></a><a href='#L67'>67</a>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -136,12 +143,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -151,13 +152,13 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -168,6 +169,16 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -177,10 +188,13 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -198,34 +212,39 @@ const { checkLogin, validateCreator, validateAmount, validateDesc } = require ("
 //check if creator exists, looking for username in user_table
 //check if amount exists
 //check if description exists
-async function <span class="fstat-no" title="function not covered" >submitNewTicket(</span>ticket){ //put
+//Post a ticket if fields exist, handle an error if not
+async function <span class="fstat-no" title="function not covered" >submitNewTicket(</span>ticket){ 
     let creatorCheck = <span class="cstat-no" title="statement not covered" >await validateCreator(ticket.creator);</span>
     let amountCheck = <span class="cstat-no" title="statement not covered" >await validateAmount(ticket);</span>
     let descCheck = <span class="cstat-no" title="statement not covered" >await validateDesc(ticket);</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (!creatorCheck){</span>
-<span class="cstat-no" title="statement not covered" >        throw new Error ("creator false");</span>
-    } else{
-<span class="cstat-no" title="statement not covered" >        console.log("creator passed");</span>
-<span class="cstat-no" title="statement not covered" >        if(!amountCheck){</span>
-<span class="cstat-no" title="statement not covered" >            throw new Error ("amount not found");</span>
+<span class="cstat-no" title="statement not covered" >    try{</span>
+<span class="cstat-no" title="statement not covered" >        if (!creatorCheck){</span>
+<span class="cstat-no" title="statement not covered" >            throw new Error ("creator false");</span>
         }else{
-<span class="cstat-no" title="statement not covered" >            console.log("amount passed");</span>
-<span class="cstat-no" title="statement not covered" >            if(!descCheck){</span>
-<span class="cstat-no" title="statement not covered" >                throw new Error("desc not found");</span>
+            //console.log("creator passed");
+<span class="cstat-no" title="statement not covered" >            if(!amountCheck){</span>
+<span class="cstat-no" title="statement not covered" >                throw new Error ("amount not found");</span>
             }else{
-<span class="cstat-no" title="statement not covered" >                console.log("desc passed");</span>
-                const newTicketData = <span class="cstat-no" title="statement not covered" >await employeeDAO.submitNewTicket({</span>
-                    ticket_id: crypto.randomUUID(),
-                    creator: ticket.creator, //login
-                    manager: "Not assigned yet", 
-                    description: ticket.description, 
-                    amount: ticket.amount, 
-                    status: "Pending"
-                })
-<span class="cstat-no" title="statement not covered" >                return newTicketData;</span>
+                //console.log("amount passed");
+<span class="cstat-no" title="statement not covered" >                if(!descCheck){</span>
+<span class="cstat-no" title="statement not covered" >                    throw new Error("description not found");</span>
+                }else{
+                    //console.log("desc passed");
+                    const newTicketData = <span class="cstat-no" title="statement not covered" >await employeeDAO.submitNewTicket({</span>
+                        ticket_id: crypto.randomUUID(),
+                        creator: ticket.creator, //login
+                        manager: "Not assigned yet", 
+                        description: ticket.description, 
+                        amount: ticket.amount, 
+                        status: "Pending"
+                    })
+<span class="cstat-no" title="statement not covered" >                    return newTicketData;</span>
+                }
             }
         }
+    }catch(err){
+<span class="cstat-no" title="statement not covered" >        logger.error(err.message)</span>
     }
 &nbsp;
 }
@@ -234,17 +253,19 @@ async function <span class="fstat-no" title="function not covered" >submitNewTic
 //submitNewTicket({creator: "newuser", description: "resources", amount: 100 });
 //submitNewTicket({ticket_id: "473ed56f-169c-4368-9407-7575a46442e8", creator: "usertest", description: "cert", amount: 50 });
 &nbsp;
-//view past tickets
-async function <span class="fstat-no" title="function not covered" >getAllTicketsByCreatorName(</span>creator){
+async function <span class="fstat-no" title="function not covered" >getAllTicketsByCreatorName(</span>creator){//view past tickets by a username
     const ticketData = <span class="cstat-no" title="statement not covered" >employeeDAO.getAllTicketsByCreatorName(creator);</span>
-<span class="cstat-no" title="statement not covered" >    if(ticketData || creator != ""){</span>
-<span class="cstat-no" title="statement not covered" >        logger.info(`ticket data exists`);</span>
-<span class="cstat-no" title="statement not covered" >        return ticketData;</span>
-    }else{
-<span class="cstat-no" title="statement not covered" >        logger.error(`ticket data not found`);</span>
-<span class="cstat-no" title="statement not covered" >        throw new Error ("ticket data not found");</span>
+<span class="cstat-no" title="statement not covered" >    try{</span>
+<span class="cstat-no" title="statement not covered" >        if(ticketData || creator != ""){</span>
+<span class="cstat-no" title="statement not covered" >            logger.info(`ticket data exists`);</span>
+<span class="cstat-no" title="statement not covered" >            return ticketData;</span>
+        }else{
+<span class="cstat-no" title="statement not covered" >            logger.error(`ticket data not found`);</span>
+<span class="cstat-no" title="statement not covered" >            throw new Error ("ticket data not found");</span>
+        }
+    }catch(err){
+<span class="cstat-no" title="statement not covered" >        logger.error(err.message);</span>
     }
-&nbsp;
 }
 &nbsp;
 //getAllTicketsByCreatorName("usertest");
@@ -259,7 +280,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-09-17T18:43:07.803Z
+                at 2025-09-19T15:16:25.951Z
             </div>
         <script src="../prettify.js"></script>
         <script>

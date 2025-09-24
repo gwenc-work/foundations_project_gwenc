@@ -1,11 +1,20 @@
 const jwt = require("jsonwebtoken");
-const logger = require ("./logger");
+const { logger } = require ("./logger");
+
 
 const secretKey = "my-jwt-key";
 
 async function authToken(req, res, next){
-    const authHeader = req.headers["Authorization"];
-    const token = authHeader && authHeader.split(" ")[1];
+    const authHeader = req.headers["authorization"];
+    //const token = authHeader && authHeader.split(" ")[1];
+    console.log("Authorization header:", req.headers["authorization"]); //incoming header
+
+    if (!authHeader) {  //header does not exist
+        console.log(`Authorization header missing`);
+        res.status(400).json({message: "Authorization header missing"})
+    }
+
+    const token = authHeader.startsWith("Bearer ") ? authHeader.split(" ")[1] : authHeader;
 
     if(!token){
         res.status(400).json({message: "No access granted"});
@@ -25,8 +34,8 @@ async function decryptJWT(token){
     try{
         const userLogin = await jwt.verify(token, secretKey);
         return userLogin;
-    }catch(error){
-        logger.error(error);
+    }catch(err){
+        logger.error(err.message);
     }
 }
 
