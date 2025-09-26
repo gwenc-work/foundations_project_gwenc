@@ -21,16 +21,17 @@ router.post("/", authToken, validatePostUser, async (req, res) => { //post a new
         const userData = await userService.getUserByUsername(username);
         //console.log("USER ROLE: " + userData.role);
 
-        if(userData.role !== "Employee"){
+        if(userData.role != "Employee"){
             res.status(400).json({message: `Only Employees can create tickets`});
+        } else{
+            const ticketData = await employeeService.submitNewTicket(req.body);
+            if(ticketData && userData.role == "Employee"){
+                res.status(201).json({message: `Ticket creation successful ${JSON.stringify(ticketData)}`});
+            }else{
+                res.status(400).json({message: "Ticket creation failed", ticketData: req.body});
+            }
         }
 
-        const ticketData = await employeeService.submitNewTicket(req.body);
-        if(ticketData && userData.role == "Employee"){
-            res.status(201).json({message: `Ticket creation successful ${JSON.stringify(ticketData)}`});
-        }else{
-            res.status(400).json({message: "Ticket creation failed", ticketData: req.body});
-        }
     }catch(err){
         logger.error(err.message);
         res.status(500).json({ message: "Request unable to be fulfilled"});

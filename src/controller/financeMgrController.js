@@ -15,19 +15,18 @@ router.post("/Approved", authToken, async(req, res) => { //approve a ticket
     try{
         if(userData.role != "Manager"){
             res.status(400).json({message: `Only Managers can approve tickets`});
-        }
-
-        if(currentTicket.status != "Pending"){
+        }else if(currentTicket.status != "Pending"){
             res.status(400).json({message: `ticket status cannot be changed`});
+        }else{
+            const ticketData = await financeMgrService.approveTicket(req.body);
+
+            if(ticketData){
+                res.status(200).json({message: `Ticket approval successful`});
+            }else{
+                res.status(400).json({message: "Ticket approval failed", ticketData: req.body});
+            }
         }
        
-        const ticketData = await financeMgrService.approveTicket(req.body);
-
-        if(ticketData){
-            res.status(200).json({message: `Ticket approval successful ${JSON.stringify(ticketData)}`});
-        }else{
-            res.status(400).json({message: "Ticket approval failed", ticketData: req.body});
-        }
     }catch(err){
         logger.error(err.message);
         res.status(500).json({ message: "Request unable to be fulfilled"});
@@ -43,19 +42,18 @@ router.post("/Denied", authToken, async(req, res) => { //deny a ticket
     try{
         if(userData.role != "Manager"){
             res.status(400).json({message: `Only Managers can deny tickets`});
-        }
-
-        if(currentTicket.status != "Pending"){
+        }else if(currentTicket.status != "Pending"){
             res.status(400).json({message: `ticket status cannot be changed`});
-        }
-
-        const ticketData = await financeMgrService.denyTicket(req.body);
-
-        if(ticketData){
-            res.status(200).json({message: `Ticket denial successful ${JSON.stringify(ticketData)}`});
         }else{
-            res.status(400).json({message: "Ticket denial failed", ticketData: req.body});
+            const ticketData = await financeMgrService.denyTicket(req.body);
+
+            if(ticketData){
+                res.status(200).json({message: `Ticket denial successful`});
+            }else{
+                res.status(400).json({message: "Ticket denial failed", ticketData: req.body});
+            }
         }
+
     }catch(err){
         logger.error(err.message);
         res.status(500).json({ message: "Request unable to be fulfilled"});

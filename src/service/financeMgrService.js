@@ -20,8 +20,11 @@ async function getAllPendingTickets(){ //get/view all pending tickets
 //getAllPendingTickets();
 
 async function approveTicket(ticket){//method to change ticket status to approved
-    console.log("TICKET STATUS: " + ticket.status);
+    //console.log("TICKET STATUS: " + ticket.status);
     try{
+        if(ticket.status == "Approved" || ticket.status == "Denied") {
+            throw new Error ("Ticket cannot be updated" );
+        } 
         if(!ticket){ //if ticket does not exist
             throw new Error ("ticket does not exist");
         }else{ //ticket exists
@@ -45,7 +48,12 @@ async function approveTicket(ticket){//method to change ticket status to approve
 //approveTicket({ticket_id: "21b065b9-b6ee-4122-aaec-28ab188fb434", creator: "usertest", description: "RESOURCES2", amount: 2000, manager: "mr.smith", status: "Approved"});
 
 async function denyTicket(ticket){ //method to change ticket status to denied
+    //console.log("TICKET STATUS: " + ticket.status);
     try{
+        if(ticket.status == "Approved" || ticket.status == "Denied") {
+            throw new Error ("Ticket cannot be updated" );
+        }   
+
         if(!ticket){ //if ticket does not exist
             throw new Error ("ticket does not exist");
         }else{ //ticket exists
